@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Martín Portfolio</title>
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<!--Body de la página Inicio-->
+<body>
+    <!--Header con menú de navegación-->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                    <img src="./img/logo.jpg" alt="logo-sitio">
+                    <h1>Laura Martín Portfolio</h1>
+                </div>
+                <div class="row">
+                    <nav class="col-lg-10 col-6">
+                        <ul>
+                            <li><a href="./index.html" target="_blank">Inicio</a></li>
+                            <li><a href="./pages/sobreMi.html" target="_blank">Sobre mí</a></li>
+                            <li><a href="./pages/proyectos.html" target="_blank">Proyectos</a></li>
+                            <li><a href="./pages/desarrollo.html" target="_blank">Desarrollo del sitio</a></li>
+                            <li><a href="./pages/contacto.html" target="_blank">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Sección de presentación-->
+        <section class="container">
+            <div class="presentacion row">
+                <div class="col-8 col-lg-4">
+                    <img src="./img/familia.jpg" alt="mi familia">
+                </div>
+                <div class="textoPresentacion col-12 col-lg-6">
+                    <h2>Hola!</h2>
+                    <p>Soy Lau, diseño y desarrollo sitios web, te invito a conocer mi portfolio..</p>
+                </div>
+            </div>
+        </section>
+        <!--Sección espaciadora con un video-->
+        <section class="container">
+            <div class="row">
+                <div class="col-10 col-lg-10">
+                    <video id="video" autoplay="autoplay" muted="true" loop="loop" preload="auto">
+                        <source src="./files/SourceCode-4733.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <!--Sección Sobre mí linkeada a la página homónima-->
+        <section class="container">
+            <div class="sobreMi row">
+                <div class="sobreMiTexto col-9 col-lg-5">
+                    <h2>Sobre mí</h2>
+                    <p>
+                        Me defino como una curiosa incansable, y es por eso que después de  
+                        incursionar en otras áreas terminé interesandome por el desarrollo web.<br>
+                        Me gusta este trabajo ya que permite utilizar tanto herramientas lógicas y 
+                        matemáticas como de diseño.<br>Me encantan los desafíos (diría que los necesito).
+                    </p>
+                    <a class="leerMas" href="./pages/sobreMi.html">Leer más</a>
+                </div>
+                <div class="col-7 col-lg-4">
+                    <img src="./img/retrato.jpeg" alt="retrato">
+                </div>
+            </div>
+        </section>
+        <!--Imagen antes del footer que tendrá animación para que parezcan como pintandose cada pincelada-->
+        <div>
+            <img src="./img/pinceladas.png" alt="pinceladasAnimadas">
+        </div>
+    </main>
+    <!--Footer con link a linkedin y descargar CV-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="alinearFooter col-2 col-lg-2">
+                    <a href="https://www.linkedin.com/in/mar%C3%ADa-laura-m-7b801921/" target="_blank">
+                        <img src="img/linkedin.png" alt="linkedin">
+                    </a>
+                </div>
+                <div class="mail col-5 col-lg-4">
+                    <img src="./img/mail.png" alt="email"> 
+                    <p>e-mail:mlaumartin7@gmail.com</p>
+                </div>
+                <div class="alinearFooter col-2 col-lg-4">
+                    <p>2023-Todos los derechos reservados</p>
+                </div>
+                <div class="alinearFooter col-3 col-lg-2">
+                    <a class="descargarCV" href="./files/CurriculumVitae.pdf" target="_blank">Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
