@@ -36,18 +36,44 @@ header div {
     justify-content: flex-start;
 }
 
+.navbar {
+    background-color: rgb(20, 108, 148) !important;
+    padding-bottom: 0;
+}
+
+
+
+.navbar-nav, .navbar-light, .nav-link {
+    color: rgb(175, 211, 226);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Mukta', sans-serif;
+} 
+
+
+
+header nav div div ul li a:hover {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: rgb(175, 211, 226) !important;
+}
+
+.navbar-toggler{
+    background-color: rgb(175, 211, 226);
+}
+
+header div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 ul {
     list-style-type: none;
     margin-bottom: 0;
     }
-
-header nav {
-    width: 90%; 
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-}
 
 header nav ul li {
     width: 220px;
@@ -55,25 +81,7 @@ header nav ul li {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5px;
 }
-
-ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    color: rgb(175, 211, 226);
-    font-family: 'Mukta', sans-serif; 
-    padding: 20px 10px 10px;
-}
-
-ul li a:hover {
-    width: 100%;
-    background-color: rgba(0,0,0,0.3);
-    cursor: pointer;
-    text-align: center;
-}
-
 
 
 /*Main*/
@@ -447,6 +455,10 @@ footer {
 
     p {
         font-size: 16px;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 10px;
     }
 
     /*Sección Presentación de Inicio*/
