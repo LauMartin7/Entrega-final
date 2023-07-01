@@ -6,50 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí | Laura Martín Portfolio</title>
     <link rel="shortcut icon" href="../img/favicon.png">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <!--Body de la página Sobre mí-->
 <body>
     <!--Header con menú de navegación-->
     <header>
-        <div>
-        <img src="../img/logo.jpg" alt="logo-sitio">
-        <h1>Laura Martín Portfolio</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <img src="../img/logo.jpg" alt="logo-sitio">
+                    <h1>Laura Martín Portfolio</h1>
+                </div>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html" target="_blank">Inicio</a></li>
-                <li><a href="./sobreMi.html" target="_blank">Sobre mí</a></li>
-                <li><a href="./proyectos.html" target="_blank">Proyectos</a></li>
-                <li><a href="./desarrollo.html" target="_blank">Desarrollo del sitio</a></li>
-                <li><a href="./contacto.html" target="_blank">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html" target="_blank">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobreMi.html" target="_blank">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./proyectos.html" target="_blank">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./desarrollo.html" target="_blank">Desarrollo del sitio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html" target="_blank">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <!--Sección Sobre mí-->
-        <section class="sobreMi" id="sobreMi">
-            <div>
-                <h2>Sobre mí</h2>
-                <p>
-                    Me defino como una curiosa incansable, y es por eso que después de 
-                    incursionar en otras áreas terminé interesandome por el desarrollo web.<br>
-                    Me gusta este trabajo ya que permite utilizar tanto herramientas lógicas y 
-                    matemáticas como de diseño. Me encantan los desafíos (diría que los necesito). <br>
-                    Soy una persona muy responsable y autoexigente, siempre me encuentro
-                    motivada para aprender cosas nuevas. <br> Tal como dicen por ahí, 
-                    el saber no ocupa lugar.
-                </p>
-                <p>
-                    Trabajemos juntos!
-                </p>
+        <section class="container">
+            <div class="sobreMi row">
+                <div class="sobreMiTexto col-10 col-lg-6" id="sobreMi">
+                    <h2>Sobre mí</h2>
+                    <p>
+                        Me defino como una curiosa incansable, y es por eso que después de 
+                        incursionar en otras áreas terminé interesandome por el desarrollo web.<br>
+                        Me gusta este trabajo ya que permite utilizar tanto herramientas lógicas y 
+                        matemáticas como de diseño. Me encantan los desafíos (diría que los necesito). <br>
+                        Soy una persona muy responsable y autoexigente, siempre me encuentro
+                        motivada para aprender cosas nuevas y emprender nuevos proyectos. <br> Tal como dicen por ahí, 
+                        el saber no ocupa lugar.
+                    </p>
+                    <p>
+                        Trabajemos juntos!
+                    </p>
+                </div>
+                <div class="col-7 col-lg-4">
+                    <img src="../img/retrato.jpeg" alt="retrato">
+                </div>
             </div>
-            <img src="../img/retrato.jpeg" alt="retrato">
         </section>
         <!--Sección Mi Carrera-->
-        <section class="sobreMi miCarrera">
-            <div>
-                <h2>Mi carrera</h2>
+        <section class="container">
+            <div class="sobreMi miCarrera row">
+                <div class="sobreMiTexto col-10 col-lg-6">
+                    <h2>Mi carrera</h2>
                 <p> 
                     Estudié Farmacia en la UNC y luego me doctoré en Cs Químicas.
                     Siempre me gustó la matemática y la lógica. <br> Luego de la pandemia me
@@ -59,8 +88,11 @@
                     y freecodeCamp. <br> Actualmente me encuentro realizando un curso de desarrollo
                     web de Coderhouse, del cual se desprende la confección de este sitio.
                 </p>
+                </div>
+                <div class="col-7 col-lg-4">
+                    <img src="../img/miCarrera.jpg" alt="carrera">
+                </div>
             </div>
-            <img src="../img/miCarrera.jpg" alt="carrera">
         </section>
     </main>
     <!--Footer con link a linkedin y descargar CV-->

@@ -42,14 +42,12 @@ header div {
 }
 
 
-
 .navbar-nav, .navbar-light, .nav-link {
     color: rgb(175, 211, 226);
     font-weight: bold;
     font-size: 20px;
     font-family: 'Mukta', sans-serif;
 } 
-
 
 
 header nav div div ul li a:hover {
@@ -118,7 +116,6 @@ p{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .textoPresentacion {
@@ -140,13 +137,14 @@ p{
 #video {
     width: 100%;
     height: 400px;
-    margin-left: 120px;
+    margin-left: 162px;
     margin-top: 120px;
     object-fit: cover;
     border: 5px solid rgb(25, 167, 206);
     border-radius: 10px;
     box-shadow: 10px 10px 15px;
 }
+
 
 /*Sección Sobre mi de Inicio y de SobreMi (para ahorrar código)*/
 
@@ -157,7 +155,6 @@ p{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .sobreMiTexto {
@@ -167,6 +164,7 @@ p{
     border: 5px solid rgb(25, 167, 206);
     border-radius: 10px;
     box-shadow: 10px 10px 15px;
+    margin-left: 14px;
 }
 
 .sobreMiTexto p {
@@ -201,14 +199,11 @@ p{
 
 /*Seccion SobreMi de SobreMi con particularidades por eso definí un id además de la clase*/
 
-#sobreMi div {
-    height: 400px;
-    width: 48vw;
+#sobreMi {
+    height: 520px;
 }
 
-#sobreMi div p {
-    text-align: justify;
-}
+
 
 /*Seccion Mi Carrera de SobreMi, hice otra clase (además de reusar la clase SobreMi)*/
 
@@ -442,7 +437,7 @@ footer {
     /*Header*/
 
     h1 {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     ul li a{
@@ -465,36 +460,36 @@ footer {
 
     .textoPresentacion {
         margin-top: 10%;
-        width: 60%;
+        width: 62%;
         height: 45%;
         padding: 5%;
     }
 
-    .presentacion img {
-        width: 100%;
-    }
 
 
     /*Sección Video de Inicio*/
 
     #video {
-        width: 100%;
-        height: 70%;
-        margin-left: 10%; 
-        margin-top: 10%;
+        height: 80%;
+        margin-left: 27%; 
+        margin-top: 15%;
     }
 
     /*Sección SobreMi de Inicio*/
 
     .sobreMiTexto {
         height: 50%;
+        width: 64%;
         padding: 5%;
+        margin-top: 10%;
+        margin-left: 0;
     }
 
     .sobreMi {
         margin-top: 0;
         margin-bottom: 15%;
         margin-left: 0;
+        align-items: center;
     }
 
     .sobreMi div img {
@@ -507,10 +502,13 @@ footer {
         font-size: 16px;
     }
 
-    /* Imagen antes del footer*/
-    main div img {
-        width: 100%;
-    }
+
+    /*Main de la Pagina SobreMi*/
+    /*Seccion SobreMi*/
+
+#sobreMi {
+    height: 120vh;
+}
 
     /*Main de la Pagina proyectos*/
     #proyectos h2 {
