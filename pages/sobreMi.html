@@ -17,8 +17,10 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 col-12">
+                <div class="col-lg-2 col-4">
                     <img src="../img/logo.jpg" alt="logo-sitio">
+                </div>
+                <div class="col-lg-10 col-8">
                     <h1>Laura Martín Portfolio</h1>
                 </div>
             </div>
@@ -53,7 +55,7 @@
     <main>
         <!--Sección Sobre mí-->
         <section class="container">
-            <div class="sobreMi row">
+            <div class="sobreMi alinear row">
                 <div class="sobreMiTexto col-10 col-lg-6" id="sobreMi">
                     <h2>Sobre mí</h2>
                     <p>
@@ -69,15 +71,15 @@
                         Trabajemos juntos!
                     </p>
                 </div>
-                <div class="col-7 col-lg-4">
+                <div class="col-8 col-lg-4 retrato">
                     <img src="../img/retrato.jpeg" alt="retrato">
                 </div>
             </div>
         </section>
         <!--Sección Mi Carrera-->
         <section class="container">
-            <div class="sobreMi miCarrera row">
-                <div class="sobreMiTexto col-10 col-lg-6">
+            <div class="sobreMi row">
+                <div class="sobreMiTexto col-10 col-lg-5" id="miCarrera">
                     <h2>Mi carrera</h2>
                 <p> 
                     Estudié Farmacia en la UNC y luego me doctoré en Cs Químicas.
@@ -89,7 +91,7 @@
                     web de Coderhouse, del cual se desprende la confección de este sitio.
                 </p>
                 </div>
-                <div class="col-7 col-lg-4">
+                <div class="col-9 col-lg-6 retrato">
                     <img src="../img/miCarrera.jpg" alt="carrera">
                 </div>
             </div>
@@ -97,13 +99,21 @@
     </main>
     <!--Footer con link a linkedin y descargar CV-->
     <footer>
-        <a href="https://www.linkedin.com/in/mar%C3%ADa-laura-m-7b801921/" target="_blank">
-            <img src="../img/linkedin.png" alt="linkedin">
-        </a>
-            <img src="../img/mail.png" alt="email"> 
-            <p id="mail">e-mail:mlaumartin7@gmail.com</p>
-            <p>2023-Todos los derechos reservados</p>
-            <a class="descargarCV" href="../files/CurriculumVitae.pdf">Descargar CV</a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="grillaFooter col-7 col-lg-7">
+                    <a href="https://www.linkedin.com/in/mar%C3%ADa-laura-m-7b801921/" target="_blank">
+                        <img src="../img/linkedin.png" alt="linkedin">
+                    </a>
+                    <img id="imgMail" src="../img/mail.png" alt="email"> 
+                    <p>e-mail:<br/>mlaumartin7@gmail.com</p>
+                </div>
+                <div class="grillaFooter col-5 col-lg-5">
+                    <a class="descargarCV" href="../files/CurriculumVitae.pdf" target="_blank">Descargar CV</a>
+                    <p>2023<br/>Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

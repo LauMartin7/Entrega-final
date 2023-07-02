@@ -29,12 +29,6 @@ h1 {
     letter-spacing: 2px;
 }
 
-header div {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: flex-start;
-}
 
 .navbar {
     background-color: rgb(20, 108, 148) !important;
@@ -61,11 +55,10 @@ header nav div div ul li a:hover {
     background-color: rgb(175, 211, 226);
 }
 
-header div {
+header div div {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
 }
 
 ul {
@@ -86,7 +79,7 @@ header nav ul li {
 
 main {
     width: 100%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 
@@ -197,19 +190,21 @@ p{
 }
 
 
-/*Seccion SobreMi de SobreMi con particularidades por eso definí un id además de la clase*/
+/*Seccion SobreMi de SobreMi con particularidades*/
 
 #sobreMi {
     height: 520px;
 }
 
+.alinear {
+    margin-left: 12px;
+    margin-bottom: 100px;
+}
 
+/*Seccion Mi Carrera de SobreMi con particularidades*/
 
-/*Seccion Mi Carrera de SobreMi, hice otra clase (además de reusar la clase SobreMi)*/
-
-
-.miCarrera div {
-    height: 450px;
+#miCarrera {
+    height: 570px;
 }
 
 /*Sección Proyectos de Proyectos*/
@@ -399,20 +394,12 @@ footer {
     padding-top: 2%;
 }
 
-.alinearFooter {
-    align-self: center;
-    text-align: center;
-}
-
-.mail{
+.grillaFooter {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
-}
-
-.mail p {
-    margin-left: 2%;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .descargarCV {
@@ -437,7 +424,7 @@ footer {
     /*Header*/
 
     h1 {
-        font-size: 25px;
+        font-size: 27px;
     }
 
     ul li a{
@@ -456,6 +443,8 @@ footer {
         margin-bottom: 10px;
     }
 
+
+    /*Main de la Pagina de Inicio*/
     /*Sección Presentación de Inicio*/
 
     .textoPresentacion {
@@ -464,7 +453,6 @@ footer {
         height: 45%;
         padding: 5%;
     }
-
 
 
     /*Sección Video de Inicio*/
@@ -494,7 +482,6 @@ footer {
 
     .sobreMi div img {
         margin-top: 15%;
-        height: 30%;
         width: 100%;
     }
 
@@ -502,15 +489,41 @@ footer {
         font-size: 16px;
     }
 
+    .retrato {
+        padding-left: 0;
+        padding-right: 0;
+        width: 64%;
+    }
 
-    /*Main de la Pagina SobreMi*/
-    /*Seccion SobreMi*/
+
+    /*Main de la Pagina Sobre Mi*/
+    /*Seccion Sobre  Mi*/
+
 
 #sobreMi {
-    height: 120vh;
+    height: 60%;
+    margin-top: 0;
 }
 
+#sobreMi p {
+    margin-bottom: 0;
+}
+
+.alinear {
+    margin-bottom: 0;
+}
+
+
+/*Seccion Mi Carrera*/
+
+#miCarrera {
+    padding-bottom: 0;
+    height: 40%;
+}
+
+
     /*Main de la Pagina proyectos*/
+
     #proyectos h2 {
         margin-bottom: 0;
         /* margin-top: 550px; */
@@ -530,28 +543,27 @@ footer {
         height: auto;
     }
     
-
-    .mail p, .alinearFooter p {
-        font-size: 12px;
-        text-align: center;
-    }
-    
-    .alinearFooter a img {
+    footer div div div a img {
         width: 90px;
         height: 50px;
     }
 
-    .mail{
-        flex-direction: column;
+    #imgMail {
+        display: none;
     }
 
-    .mail img {
-        width: 40px;
-        height: 40px;
+    .grillaFooter p {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 9px;
+    }
+    
+    .grillaFooter{
+        flex-direction: column;
     }
 
     .descargarCV {
         font-size: 11px;
-        margin-left: 0;
+        margin-top: 10px;
     }
 }
