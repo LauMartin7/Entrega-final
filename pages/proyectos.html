@@ -6,77 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos | Laura Martín Portfolio</title>
     <link rel="shortcut icon" href="../img/favicon.png">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <!--Body de la página Proyectos-->
 <body>
     <!--Header con menú de navegación-->
     <header id="header">
-        <div>
-            <img src="../img/logo.jpg" alt="logo-sitio">
-            <h1>Laura Martín Portfolio</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-4">
+                    <img src="../img/logo.jpg" alt="logo-sitio">
+                </div>
+                <div class="col-lg-10 col-8">
+                    <h1>Laura Martín Portfolio</h1>
+                </div>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html" target="_blank">Inicio</a></li>
-                <li><a href="./sobreMi.html" target="_blank">Sobre mí</a></li>
-                <li><a href="./proyectos.html" target="_blank">Proyectos</a></li>
-                <li><a href="./desarrollo.html" target="_blank">Desarrollo del sitio</a></li>
-                <li><a href="./contacto.html" target="_blank">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html" target="_blank">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobreMi.html" target="_blank">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./proyectos.html" target="_blank">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./desarrollo.html" target="_blank">Desarrollo del sitio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html" target="_blank">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main id="proyectos">
-<!--Sección de Proyectos-->
-        <h2>Trabajos y proyectos</h2>
-        <section>
-            <!--Sitio que hice previo al curso, en construccion-->
-            <div>
-                <img src="../img/malaguetaScreenshot.png" alt="sitio-indumentaria">
-                <h3>Sitio de indumentaria femenina</h3>
-                <p>Sitio en construcción, falta agregar el footer, carrito de compras, selector de talles, slider en los productos, etc. </p>
-                <a class="irAlSitio" href="https://leojdiaz.gitlab.io/paginalau/" target="_blank">Ir al sitio</a>
+    <main id="margenProyectos">
+        <!--Sección con intro de la página-->
+        <section class="container">
+            <div class="introProyectos row">
+                <div class="introProyectosTexto col-8 col-lg-5">
+                    <h2>Trabajos y proyectos</h2>
+                    <p>
+                    En esta página se podrán visualizar los sitios que vaya haciendo.<br>
+                    Por el momento, hay uno en construcción y el resto son proyectos.
+                    </p>
+                </div>
+                <div class="col-10 col-lg-3">
+                    <img src="../img/working.png" alt="chica-trabajando">
+                </div>
             </div>
-            <!--Las siguientes son proyectos/ideas-->
-            <div>
-                <img src="../img/registroEnf.jpg" alt="sitio-registro">
-                <h3>Registro de enfermedades infantiles</h3>
-                <p>Sitio para registrar enfermedades agudas infantiles. Posibilidad de programar una alarma para administrar medicamentos. Permite agregar nuevos síntomas y dudas y calcular dosis a suministrar. </p>
-            </div>
-            <div>
-                <img src="../img/dolar.jpg" alt="sitio-dolar">
-                <h3>Dólar hoy Argentina</h3>
-                <p>Actualizaciones diarias y porcentaje de variación del dólar. Proyecciones estimadas. </p>
-            </div>
-            <div>
-                <img src="../img/congreso.jpg" alt="sitio-dolar">
-                <h3>Congreso 2023</h3>
-                <p>Invitación a un evento científico con formulario de contacto para participantes y opción de enviar sus trabajos por la plataforma</p>
-            </div>
-            <div>
-                <img src="../img/futbol.png" alt="sitio-dolar">
-                <h3>Fixture Copa Argentina</h3>
-                <p>Cronograma de partidos con resultados actualizados en tiempo real. </p>
-            </div>
-            <div id="ideasFila">
-                <img src="../img/otomano.png" alt="sitio-dolar">
-                <h3>Historias del Imperio Otomano</h3>
-                <p>Historias y novelas sobre el Imperio Otomano. </p>
+        </section>
+        <!--Sección de Proyectos-->
+        <section class="container">
+            <div class="grillaProyectos row">
+                <!--Sitio que hice previo al curso, en construccion-->
+                <div class="proyectos col-12 col-lg-3">
+                    <img src="../img/malaguetaScreenshot.png" alt="sitio-indumentaria">
+                    <details>
+                        <summary>Sitio de indumentaria femenina</summary>
+                        <div>
+                            <p class="malagueta">Sitio en construcción, falta agregar el footer, carrito de compras, selector de talles, slider en los productos, etc. </p>
+                            <a class="irAlSitio" href="https://leojdiaz.gitlab.io/paginalau/" target="_blank">Ir al sitio</a>
+                        </div>
+                    </details>
+                </div>
+                <!--Las siguientes son proyectos/ideas-->
+                <div class="proyectos col-12 col-lg-3">
+                    <img src="../img/registro.jpg" alt="sitio-registro">
+                    <details>
+                        <summary>Registro de enfermedades infantiles</summary>
+                    <p>Sitio para registrar enfermedades agudas infantiles. Posibilidad de programar una alarma para administrar medicamentos. Permite agregar nuevos síntomas o dudas y calcular dosis a suministrar. </p>
+                    </details>
+                </div>
+                <div class="proyectos col-12 col-lg-3">
+                    <img src="../img/dolar.jpg" alt="sitio-dolar">
+                    <details>
+                        <summary>Dólar hoy Argentina</summary>
+                        <p>Actualizaciones diarias y porcentaje de variación del dólar. Proyecciones estimadas. </p>
+                    </details>
+                </div>
+                <div class="proyectos col-12 col-lg-3">
+                    <img src="../img/congreso.jpg" alt="sitio-dolar">
+                    <details>
+                        <summary>Congreso 2023</summary>
+                        <p>Invitación a un evento científico con formulario de contacto para participantes y opción de enviar sus trabajos por la plataforma</p>
+                    </details>
+                </div>
+                <div class="proyectos col-12 col-lg-3">
+                    <img src="../img/menu.png" alt="sitio-menus">
+                    <details>
+                        <summary>Buscador de menús de comida</summary>
+                        <p>Sitio que permite crear menús con lo que tienes disponible en tu cocina. </p>
+                    </details>
+                </div>
+                <div class="proyectos col-12 col-lg-3">
+                    <img src="../img/otomano.jpg" alt="sitio-otomano">
+                    <details>
+                        <summary>Historias del Imperio Otomano</summary>
+                        <p>Historias y novelas sobre el Imperio Otomano.</p>
+                    </details>
+                </div>
             </div>
         </section>
     </main>
     <!--Footer con link a linkedin y descargar CV-->
     <footer>
-        <a href="https://www.linkedin.com/in/mar%C3%ADa-laura-m-7b801921/" target="_blank">
-            <img src="../img/linkedin.png" alt="linkedin">
-        </a> 
-            <div class="mail">
-                <img src="../img/mail.png" alt="email">
-                <p>e-mail: mlaumartin7@gmail.com</p></div>
-            <div>
-                <p>2023-Todos los derechos reservados</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="grillaFooter col-7 col-lg-7">
+                    <a href="https://www.linkedin.com/in/mar%C3%ADa-laura-m-7b801921/" target="_blank">
+                        <img src="../img/linkedin.png" alt="linkedin">
+                    </a>
+                    <img id="imgMail" src="../img/mail.png" alt="email"> 
+                    <p>e-mail:<br/>mlaumartin7@gmail.com</p>
+                </div>
+                <div class="grillaFooter col-5 col-lg-5">
+                    <a class="descargarCV" href="../files/CurriculumVitae.pdf" target="_blank">Descargar CV</a>
+                    <p>2023<br/>Todos los derechos reservados</p>
+                </div>
             </div>
-            <a class="descargarCV" href="../files/CurriculumVitae.pdf">Descargar CV</a>
+        </div>
     </footer>
 </body>
 </html>

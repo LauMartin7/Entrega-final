@@ -207,50 +207,87 @@ p{
     height: 570px;
 }
 
-/*Sección Proyectos de Proyectos*/
 
-#proyectos h2 {
-    text-align: center;
-}
+/*Sección con intro de Proyectos*/
 
-#proyectos section {
-    display: grid;
-    width: 100%;
-    min-height: 1200px;
-    grid-template-columns: 420px 420px 420px;
-    grid-template-rows: 500px 500px;
-    justify-content: space-around;
-    align-content: space-around;
-}
-
-
-#proyectos section div {
-    background-color: rgb(175, 211, 226);
+.introProyectosTexto {
+    height: 260px;
+    padding: 50px;
+    background-color:  rgb(175, 211, 226);
     border: 5px solid rgb(25, 167, 206);
     border-radius: 10px;
     box-shadow: 10px 10px 15px;
-    width: 420px;
-    height: fit-content;
+    margin-left: 50px;
+    margin-right: 80px;
+}
+
+.introProyectosTexto h2 {
+    margin-bottom: 20px;
+}
+
+.introProyectos div img {
+    border: 5px solid rgb(25, 167, 206);
+    border-radius: 300px;
+    box-shadow: 10px 10px 15px;
+    margin-left: 80px;
+}
+
+
+/*Sección Proyectos de Proyectos*/
+
+.grillaProyectos {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 150px;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+
+.proyectos {
+    background-color: #f6f1f1;
+    width: 370px;
+    height: 300px;
     padding: 10px;
     padding-bottom: 20px;
     text-align: center;
 }
 
-h3 {
-    font-family: 'Mukta', sans-serif;
-    font-size: 20px;
-    color: rgb(20, 108, 148);
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+.proyectos details summary:hover, .proyectos details summary:active {
+    background-color:  rgba(20, 108, 148, 0.8);
 }
 
-#proyectos section div p {
+.proyectos details summary {
+    background-color: rgb(20, 108, 148);
+    border: 2px solid rgb(20, 108, 148);
+    padding: 5px;
+    cursor: pointer;
     font-family: 'Mukta', sans-serif;
     font-size: 18px;
-    color: black;
+    font-weight: bold;
+    color: rgb(175, 211, 226);
+    text-align: center;
+}
+
+.proyectos details div {
+    background-color: rgb(175, 211, 226);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    padding-bottom: 20px;
+}
+
+.proyectos details p {
+    background-color: rgb(175, 211, 226);
+    color: rgb(20, 108, 148);
+    padding: 10px;
+    height: fit-content;
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
     text-align: justify;
-    margin: 15px;
+}
+
+.proyectos details p:not(.malagueta) {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .irAlSitio {
@@ -309,7 +346,6 @@ h3 {
 
 .lenguajes div h3{
     font-size: 25px;
-
 }
 
 .lenguajes img {
@@ -513,7 +549,6 @@ footer {
     margin-bottom: 0;
 }
 
-
 /*Seccion Mi Carrera*/
 
 #miCarrera {
@@ -524,19 +559,46 @@ footer {
 
     /*Main de la Pagina proyectos*/
 
-    #proyectos h2 {
-        margin-bottom: 0;
-        /* margin-top: 550px; */
+    .introProyectosTexto {
+        height: fit-content;
+        width: fit-content;
+        margin-left: 15%;
+        margin-right: 15%;
     }
-    
-    #proyectos section{
+
+    .introProyectos div img {
+        width: 300px;
+        margin-top: 50px;
+        margin-left: 25%;
+    }
+
+    .grillaProyectos {
         height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6,1fr);
+        justify-content: center;
         justify-items: center;
-        align-items: center;
+        row-gap: 17%;
     }
     
+    #margenProyectos {
+        height: 1050vh;
+    }
+    
+    .proyectos details summary {
+        font-size: 16px;
+    }
+
+    .proyectos {
+        width: 100%;
+        justify-self: center;
+        margin-left: 25px;
+    }
+
+    .proyectos img {
+        width: 80% 
+    }
+
     /*Footer*/
 
     footer{
