@@ -229,7 +229,11 @@ p{
 }
 
 .introProyectos div h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.introProyectos div p {
+    text-align: justify;
 }
 
 .intro {
@@ -485,7 +489,7 @@ footer {
 }
 
 
-/*MOVIL*/ 
+/*VISTA MOBILE*/ 
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
     
@@ -607,17 +611,25 @@ footer {
 
     /*Main de la Pagina proyectos*/
 
+    .intro {
+        padding: 5%;
+    }
+
     .introProyectos {
-        height: fit-content;
-        width: fit-content;
-        margin-left: 15%;
-        margin-right: 15%;
+        height: auto;
+        width: 90%;
+        margin-left: 5%;
+        justify-items: center;
+        padding: 5%;
+    }
+
+    .introProyectos div h2 {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .introProyectos div img {
-        width: 300px;
-        margin-top: 50px;
-        margin-left: 25%;
+        width: 100%;
     }
 
     .grillaProyectos {
