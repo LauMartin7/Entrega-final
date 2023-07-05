@@ -264,7 +264,6 @@ p{
     text-align: center;
 }
 
-
 .proyectos details summary:hover, .proyectos details summary:active {
     background-color:  rgba(20, 108, 148, 0.8);
 }
@@ -642,7 +641,7 @@ footer {
     }
     
     #margenProyectos {
-        height: 1050vh;
+        height: 1000vh;
     }
     
     .proyectos details summary {
@@ -656,7 +655,7 @@ footer {
     }
 
     .proyectos img {
-        width: 80% 
+        width: 80%;
     }
 
     /*Footer*/
