@@ -491,6 +491,10 @@ footer {
     
     /*Header*/
 
+    header {
+        margin-bottom: 20%;
+    }
+
     h1 {
         font-size: 27px;
     }
@@ -516,28 +520,40 @@ footer {
     /*Sección Presentación de Inicio*/
 
     .textoPresentacion {
-        margin-top: 10%;
-        width: 62%;
+        margin-top: 20%;
+        width: 80%;
         height: 45%;
         padding: 5%;
     }
 
+    .presentacion {
+        margin-top: 0;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .presentacion div img {
+        width: 84%;
+        margin-left: 8%;
+        align-self: center;
+        justify-self: center;
+    }
 
     /*Sección Video de Inicio*/
 
     #video {
         height: 80%;
-        margin-left: 27%; 
-        margin-top: 15%;
+        margin-left: 12%; 
+        margin-top: 20%;
     }
 
     /*Sección SobreMi de Inicio*/
 
     .sobreMiTexto {
         height: 50%;
-        width: 64%;
+        width: 80%;
         padding: 5%;
-        margin-top: 10%;
+        margin-top: 20%;
         margin-left: 0;
     }
 
@@ -549,7 +565,7 @@ footer {
     }
 
     .sobreMi div img {
-        margin-top: 15%;
+        margin-top: 20%;
         width: 100%;
     }
 
@@ -560,7 +576,7 @@ footer {
     .retrato {
         padding-left: 0;
         padding-right: 0;
-        width: 64%;
+        width: 80%;
     }
 
 
@@ -581,7 +597,7 @@ footer {
     margin-bottom: 0;
 }
 
-/*Seccion Mi Carrera*/
+    /*Seccion Mi Carrera*/
 
 #miCarrera {
     padding-bottom: 0;
