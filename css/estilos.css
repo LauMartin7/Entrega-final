@@ -419,7 +419,7 @@ form div{
     width: 400px;
     display: flex;
     flex-direction: row;
-    align-items:baseline; 
+    align-items: baseline; 
     justify-content: center;
 }
 
@@ -689,6 +689,36 @@ footer {
         width: 85%;
         margin-left: 8%;
     }
+
+    /*Main de la Pagina Contacto*/
+
+    .flexcontacto div p {
+        font-size: 16px;
+    }
+
+    form {
+        width: 80%;
+        height: fit-content;
+    }
+
+    form div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .boton {
+        align-items: center;
+    }
+
+    .boton button {
+        font-size: 16px;
+    }
+
+    input[type=text],
+    input[type=email], textarea {
+        width: 97%;
+    }
+
 
     /*Footer*/
 
