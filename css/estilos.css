@@ -260,7 +260,6 @@ p{
     width: 370px;
     height: 300px;
     padding: 10px;
-    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -632,16 +631,18 @@ footer {
     }
 
     .grillaProyectos {
-        height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,1fr);
-        justify-content: center;
-        justify-items: center;
-        row-gap: 17%;
+        grid-template-rows: 13% 22% 14% 18% 10% 8%;
+        row-gap: 3%;
+        width: 100%;
+        margin-top: 30vh;
+        margin-left: 0;
+        margin-bottom: 0;
     }
     
-    #margenProyectos {
+    .seccionProyectos {
         height: 1000vh;
+        width: 100%;
     }
     
     .proyectos details summary {
@@ -649,9 +650,10 @@ footer {
     }
 
     .proyectos {
-        width: 100%;
+        width: 80%;
         justify-self: center;
-        margin-left: 25px;
+        height: auto;
+        padding: 0;
     }
 
     .proyectos img {
