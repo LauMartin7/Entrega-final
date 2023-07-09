@@ -317,15 +317,18 @@ p{
 /*DESARROLLO*/
 
 
-
 .desarrollo {
     padding: 50px;
     background-color:  rgb(175, 211, 226);
     border: 5px solid rgb(25, 167, 206);
     border-radius: 10px;
     box-shadow: 10px 10px 15px;
-    margin-left: 95px;
 }
+
+.flexDesarrollo {
+        display: flex;
+        justify-content: center;
+    }
 
 .desarrollo p {
     margin-top: 20px;
@@ -658,6 +661,33 @@ footer {
 
     .proyectos img {
         width: 80%;
+    }
+
+    /*Main de la Pagina Desarrollo*/
+
+    .desarrollo h2 {
+        text-align: center;
+    }
+
+    .desarrollo {
+        height: fit-content;
+    }
+
+    .lenguajes {
+        margin-left: 0;
+        margin-top: 7%;
+    }
+
+    .lenguajesTexto {
+        padding: 5%;
+        width: 88%;
+        height: fit-content;
+        margin-top: 7%;
+    }
+
+    .lenguajes div img {
+        width: 85%;
+        margin-left: 8%;
     }
 
     /*Footer*/
