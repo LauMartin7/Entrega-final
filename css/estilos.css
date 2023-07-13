@@ -1,752 +1,731 @@
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Mukta:wght@300&family=Nunito:wght@300&family=Roboto+Slab&display=swap"); /*Tipografía*/
 * {
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+/*Body de todas las paginas*/
 body {
-    background-color: #f6f1f1;
+  background-color: #f6f1f1;
+}
+body p {
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  color: rgb(20, 108, 148);
 }
 
-
-/*Header*/
-
+/*Header de todas las paginas*/
 header {
-    background-color: rgb(20, 108, 148);
-    width: 100%;
-    margin-bottom: 100px;
+  background-color: rgb(20, 108, 148);
+  width: 100%;
+  margin-bottom: 100px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mukta:wght@300&family=Nunito:wght@300&family=Roboto+Slab&display=swap');
-
-h1 {
-    font-family: 'Mukta', sans-serif;
-    text-shadow: 3px 7px 2px rgba(27, 29, 29, 0.243);
-    font-size: 40px;
-    text-align: center;
-    color: rgb(175, 211, 226);
-    letter-spacing: 2px;
+header h1 {
+  font-family: "Mukta", sans-serif;
+  text-shadow: 3px 7px 2px rgba(27, 29, 29, 0.243);
+  font-size: 40px;
+  text-align: center;
+  color: rgb(175, 211, 226);
+  letter-spacing: 2px;
 }
-
-
-.navbar {
-    background-color: rgb(20, 108, 148) !important;
-    padding-bottom: 0;
-}
-
-
-.navbar-nav, .navbar-light, .nav-link {
-    color: rgb(175, 211, 226);
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Mukta', sans-serif;
-} 
-
-
-header nav div div ul li a:hover {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    text-align: center;
-    color: rgb(175, 211, 226) !important;
-}
-
-.navbar-toggler{
-    background-color: rgb(175, 211, 226);
-}
-
 header div div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header nav.navbar {
+  background-color: rgb(20, 108, 148) !important;
+  padding-bottom: 0;
+}
+header nav.navbar-light {
+  color: rgb(175, 211, 226);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Mukta", sans-serif;
+}
+header nav.navbar-light div div ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+header nav.navbar-light div div ul.navbar-nav {
+  color: rgb(175, 211, 226);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Mukta", sans-serif;
+}
+header nav.navbar-light div div ul.navbar-nav li {
+  width: 220px;
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+header nav.navbar-light div div ul.navbar-nav li a.nav-link {
+  color: rgb(175, 211, 226);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Mukta", sans-serif;
+}
+header nav.navbar-light div div ul.navbar-nav li a:hover {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: rgb(175, 211, 226) !important;
+}
+header nav.navbar-light div .navbar-toggler {
+  background-color: rgb(175, 211, 226);
+}
+header.headerDesarrollo {
+  margin-bottom: 0;
 }
 
-ul {
-    list-style-type: none;
-    margin-bottom: 0;
-    }
-
-header nav ul li {
-    width: 220px;
-    display: inline-flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.headerDesarrollo {
-    margin-bottom: 0;
-}
-
-/*Main*/
-
+/*Main de todas las paginas*/
 main {
-    width: 100%;
+  width: 100%;
+}
+main h2 {
+  font-family: "Mukta", sans-serif;
+  font-size: 30px;
+  color: rgb(20, 108, 148);
+  font-weight: bold;
 }
 
 /*INDEX*/
 /*Sección presentación de Inicio*/
-
-h2 {
-    font-family: 'Mukta', sans-serif;
-    font-size: 30px;
-    color: rgb(20, 108, 148);
-    font-weight: bold;
+section .presentacion {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
-
-p{
-    font-family: 'Mukta', sans-serif;
-    font-size: 20px;
-    color: rgb(20, 108, 148);
+section .presentacion img {
+  width: 100%;
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px;
 }
-
-.presentacion img {
-    width: 100%;
-    border: 5px solid rgb(25, 167, 206);
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px;
+section .presentacion .textoPresentacion {
+  width: 30%;
+  height: 20%;
+  padding: 50px;
+  background-color: rgb(175, 211, 226);
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px;
 }
-
-.presentacion {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-
-.textoPresentacion {
-    width: 30%;
-    height: 20%;
-    padding: 50px;
-    background-color: rgb(175, 211, 226);
-    border: 5px solid rgb(25, 167, 206);
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px;
-}
-
-.textoPresentacion p {
-    margin-top: 20px;
+section .presentacion .textoPresentacion p {
+  margin-top: 20px;
 }
 
 /*Sección video de Inicio*/
-
-#video {
-    width: 100%;
-    height: 400px;
-    margin-left: 162px;
-    margin-top: 120px;
-    object-fit: cover;
-    border: 5px solid rgb(25, 167, 206);
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px;
+section #video {
+  width: 100%;
+  height: 400px;
+  margin-left: 162px;
+  margin-top: 120px;
+  object-fit: cover;
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px;
 }
 
-/*INDEX Y SOBRE MI*/
-/*Sección Sobre mi de Inicio y de SobreMi (para ahorrar código)*/
-
-.sobreMi {
-    margin-left: 50px;
-    margin-top: 100px;
-    margin-bottom: 150px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+/*Sección Sobre mi de Inicio*/
+section .sobreMiI {
+  margin-left: 50px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
-
-.sobreMiTexto {
-    height: 480px;
-    padding: 50px;
-    background-color: rgb(175, 211, 226);
-    border: 5px solid rgb(25, 167, 206);
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px;
-    margin-left: 14px;
+section .sobreMiI .sobreMiTextoI {
+  height: 480px;
+  padding: 50px;
+  background-color: rgb(175, 211, 226);
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px;
+  margin-left: 14px;
 }
-
-.sobreMiTexto p {
-    margin-top: 20px;
-    text-align: justify;
-    margin-bottom: 30px;
+section .sobreMiI .sobreMiTextoI p {
+  margin-top: 20px;
+  text-align: justify;
+  margin-bottom: 30px;
 }
-
-.leerMas {
-    background-color: rgb(246, 241, 241);
-    padding: 6px 8px;
-    border: 2px solid rgb(20, 108, 148);
-    border-radius: 7px;
-    font-family: 'Mukta', sans-serif;
-    font-size: 20px;
-    color: rgb(20, 108, 148);
-    text-decoration: none;
+section .sobreMiI .sobreMiTextoI .leerMas {
+  background-color: rgb(246, 241, 241);
+  padding: 6px 8px;
+  border: 2px solid rgb(20, 108, 148);
+  border-radius: 7px;
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  color: rgb(20, 108, 148);
+  text-decoration: none;
 }
-
-.leerMas:hover {
-    box-shadow: 5px 7px 18px 10px rgb(221, 237, 231);
+section .sobreMiI .sobreMiTextoI .leerMas:hover {
+  box-shadow: 5px 7px 18px 10px rgb(221, 237, 231);
 }
-
-
-.sobreMi div img {
-    border: 5px solid rgb(25, 167, 206);
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px;
-    width: 100%;
+section .sobreMiI .retrato img {
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px;
+  width: 100%;
 }
 
 /*SOBRE MI*/
-/*Seccion SobreMi de SobreMi con particularidades*/
-
-#sobreMi {
-    height: 520px;
+/*Seccion SobreMi de SobreMi */
+section .sobreMiS {
+  margin-top: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-left: 12px;
+  margin-bottom: 100px;
+}
+section .sobreMiS .sobreMiTextoS {
+  height: 540px;
+  padding: 50px;
+  background-color: rgb(175, 211, 226);
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px;
+  margin-left: 14px;
+}
+section .sobreMiS .sobreMiTextoS p {
+  margin-top: 20px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+section .sobreMiS .retrato img {
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px;
+  width: 100%;
 }
 
-.alinear {
-    margin-left: 12px;
-    margin-bottom: 100px;
+/*Seccion Mi Carrera de SobreMi*/
+section .miCarrera {
+  margin-top: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  margin-bottom: 150px;
 }
-
-/*Seccion Mi Carrera de SobreMi con particularidades*/
-
-#miCarrera {
-    height: 570px;
+section .miCarrera .miCarreraTexto {
+  height: 570px;
+  padding: 50px;
+  background-color: rgb(175, 211, 226);
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px;
+  margin-left: 14px;
+}
+section .miCarrera .miCarreraTexto p {
+  margin-top: 20px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+section .miCarrera .retrato img {
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px;
+  width: 100%;
 }
 
 /*PROYECTOS*/
 /*Sección con intro de Proyectos*/
-
-
-.introProyectos {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 850px;
-    padding: 30px;
-    background-color:  rgb(175, 211, 226);
-    border: 5px solid rgb(25, 167, 206);
-    border-radius: 40px;
-    box-shadow: 10px 10px 15px;
-    margin-left: 180px;
-}
-
-.introProyectos div h2 {
-    margin-bottom: 40px;
-}
-
-.introProyectos div p {
-    text-align: justify;
-}
-
 .intro {
-    width: 100%;
-    padding: 100px;
-    background-image: url(../img/chicaCodigo.jpg);
-    background-size: contain;
-    background-position: center;
+  width: 100%;
+  padding: 100px;
+  background-image: url(../img/chicaCodigo.jpg);
+  background-size: contain;
+  background-position: center;
+}
+.intro .introProyectos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 850px;
+  padding: 30px;
+  background-color: rgb(175, 211, 226);
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 40px;
+  box-shadow: 10px 10px 15px;
+  margin-left: 180px;
+}
+.intro .introProyectos div h2 {
+  margin-bottom: 40px;
+}
+.intro .introProyectos div p {
+  text-align: justify;
 }
 
 /*Sección Proyectos de Proyectos*/
-
 .grillaProyectos {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 150px;
-    margin-bottom: 150px;
-    margin-top: 100px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 150px;
+  margin-bottom: 150px;
+  margin-top: 100px;
 }
-
-.proyectos {
-    background-color: #f6f1f1;
-    width: 370px;
-    height: 300px;
-    padding: 10px;
-    text-align: center;
+.grillaProyectos .proyectos {
+  background-color: #f6f1f1;
+  width: 370px;
+  height: 300px;
+  padding: 10px;
+  text-align: center;
 }
-
-.proyectos details summary:hover, .proyectos details summary:active {
-    background-color:  rgba(20, 108, 148, 0.8);
+.grillaProyectos .proyectos details summary {
+  background-color: rgb(20, 108, 148);
+  border: 2px solid rgb(20, 108, 148);
+  padding: 5px;
+  cursor: pointer;
+  font-family: "Mukta", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(175, 211, 226);
+  text-align: center;
 }
-
-.proyectos details summary {
-    background-color: rgb(20, 108, 148);
-    border: 2px solid rgb(20, 108, 148);
-    padding: 5px;
-    cursor: pointer;
-    font-family: 'Mukta', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: rgb(175, 211, 226);
-    text-align: center;
+.grillaProyectos .proyectos details summary:hover {
+  background-color: rgba(20, 108, 148, 0.8);
 }
-
-.proyectos details div {
-    background-color: rgb(175, 211, 226);
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-    padding-bottom: 20px;
+.grillaProyectos .proyectos details summary:active {
+  background-color: rgba(20, 108, 148, 0.8);
 }
-
-.proyectos details p {
-    background-color: rgb(175, 211, 226);
-    color: rgb(20, 108, 148);
-    padding: 10px;
-    height: fit-content;
-    font-family: 'Mukta', sans-serif;
-    font-size: 16px;
-    text-align: justify;
+.grillaProyectos .proyectos details div {
+  background-color: rgb(175, 211, 226);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  padding-bottom: 20px;
 }
-
-.proyectos details p:not(.malagueta) {
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+.grillaProyectos .proyectos details div .irAlSitio {
+  background-color: rgb(246, 241, 241);
+  padding: 6px 8px;
+  border: 2px solid rgb(20, 108, 148);
+  border-radius: 7px;
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  color: rgb(20, 108, 148);
+  text-decoration: none;
 }
-
-.irAlSitio {
-    background-color: rgb(246, 241, 241);
-    padding: 6px 8px;
-    border: 2px solid rgb(20, 108, 148);
-    border-radius: 7px;
-    font-family: 'Mukta', sans-serif;
-    font-size: 20px;
-    color: rgb(20, 108, 148);
-    text-decoration: none;
+.grillaProyectos .proyectos details div .irAlSitio:hover {
+  box-shadow: 5px 7px 20px 2px rgb(221, 237, 231);
 }
-
-.irAlSitio:hover {
-    box-shadow: 5px 7px 20px 2px rgb(221, 237, 231);
+.grillaProyectos .proyectos details p {
+  background-color: rgb(175, 211, 226);
+  color: rgb(20, 108, 148);
+  padding: 10px;
+  height: fit-content;
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
+  text-align: justify;
+}
+.grillaProyectos .proyectos details p:not(.malagueta) {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 /*DESARROLLO*/
-
-
-.desarrollo {
-    padding: 50px;
-    background-color:  rgb(175, 211, 226);
-    border: 5px solid rgb(25, 167, 206);
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px;
-}
-
-.flexDesarrollo {
-        display: flex;
-        justify-content: center;
-    }
-
-.desarrollo p {
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.lenguajes{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    width: 100%;
-}
-
-.lenguajesTexto {
-    width: 800px;
-    height: 250px;
-    padding: 50px;
-    background-color: rgb(175, 211, 226);
-    border: 5px solid rgb(25, 167, 206);
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px;
-}
-
-.lenguajesTexto h3 {
-    font-family: 'Mukta', sans-serif;
-    font-size: 25px;
-    color: rgb(20, 108, 148);
-    font-weight: bold;
-    text-align: center;
-}
-
-
 #desarrollo {
-    padding-bottom: 100px;
-    padding-top: 100px;
-    background-image: url(../img/codigo.jpg);
-    background-size: cover;
-    background-position: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-image: url(../img/codigo.jpg);
+  background-size: cover;
+  background-position: center;
+  /*--Seccion con explicación del sitio/intro de la página*/
+}
+#desarrollo section .flexDesarrollo {
+  display: flex;
+  justify-content: center;
+}
+#desarrollo section .flexDesarrollo .desarrollo {
+  padding: 50px;
+  background-color: rgb(175, 211, 226);
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px;
+}
+#desarrollo section .flexDesarrollo .desarrollo p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+/*--Seccion de lenguajes usados*/
+section .lenguajes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+section .lenguajes .lenguajesTexto {
+  width: 460px;
+  height: 250px;
+  padding: 20px;
+  background-color: rgb(175, 211, 226);
+  border: 5px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px;
+  text-align: center;
+}
+section .lenguajes .lenguajesTexto h3 {
+  font-family: "Mukta", sans-serif;
+  font-size: 25px;
+  color: rgb(20, 108, 148);
+  font-weight: bold;
+  text-align: center;
 }
 
 /*CONTACTO*/
-
 #contacto {
-    background-image: url(../img/correo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 100px;
+  background-image: url(../img/correo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+#contacto section .flexContacto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#contacto section .flexContacto .contacto {
+  margin-bottom: 20px;
+  font-family: "Mukta", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+}
+#contacto form {
+  background-color: rgb(175, 211, 226);
+  width: 40%;
+  height: 750px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mukta", sans-serif;
+  font-weight: bold;
+  border-right: 7px solid rgba(20, 108, 148, 0.8);
+  border-bottom: 7px solid rgba(20, 108, 148, 0.8);
+}
+#contacto form div {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+#contacto form div input[type=text],
+#contacto form div input[type=email] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgb(25, 167, 206);
+  border-radius: 10px;
+  margin-left: 10px;
+}
+#contacto form div textarea {
+  width: 80%;
+  padding: 40px 20px;
+  margin: 8px 10px;
+  border: 1px solid rgb(25, 167, 206);
+  border-radius: 10px;
+}
+#contacto form div ::placeholder {
+  font-family: "Mukta", sans-serif;
+  color: rgb(25, 167, 206);
+}
+#contacto form .boton button {
+  background-color: rgb(246, 241, 241);
+  padding: 6px 8px;
+  margin-top: 20px;
+  border: 2px solid rgb(20, 108, 148);
+  border-radius: 7px;
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  color: rgb(20, 108, 148);
 }
 
-.contacto {
-    margin-bottom: 20px;
-    font-family: 'Mukta', sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    text-align: center;
-}
-
-.flexContacto {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-
-form{
-    background-color: rgb(175, 211, 226);
-    width: 40%;
-    height: 750px;
-    padding: 12px 20px;
-    border-radius: 10px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Mukta', sans-serif;
-    font-weight: bold;
-    border-right: 7px solid rgba(20, 108, 148, 0.8);
-    border-bottom: 7px solid rgba(20, 108, 148, 0.8);;
-}
-
-form div{
-    width: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline; 
-    justify-content: center;
-}
-
-input[type=text],
-input[type=email] {
-    width: 70%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid rgb(25, 167, 206);
-    border-radius: 10px;
-    margin-left: 10px;
-}
-
-textarea {
-    width: 80%;
-    padding: 40px 20px;
-    margin: 8px 10px;
-    border: 1px solid rgb(25, 167, 206);
-    border-radius: 10px;
-}
-
-form div button {
-    background-color: rgb(246, 241, 241);
-    padding: 6px 8px;
-    margin-top: 20px;
-    border: 2px solid rgb(20, 108, 148);
-    border-radius: 7px;
-    font-family: 'Mukta', sans-serif;
-    font-size: 20px;
-    color: rgb(20, 108, 148);
-}
-
-::placeholder {
-    font-family: 'Mukta', sans-serif;
-    color: rgb(25, 167, 206);
-}
-
-    /*Footer*/
-
+/*Footer*/
 footer {
-    background-color: rgb(25, 167, 206);
-    height: 150px;
-    width: 100%;
-    padding-top: 2%;
+  background-color: rgb(25, 167, 206);
+  height: 150px;
+  width: 100%;
+  padding-top: 2%;
+}
+footer .grillaFooter {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+footer .grillaFooter .descargarCV {
+  background-color: rgb(246, 241, 241);
+  padding: 6px 8px;
+  border: 2px solid rgb(20, 108, 148);
+  border-radius: 7px;
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  color: rgb(20, 108, 148);
+  text-decoration: none;
+}
+footer .grillaFooter .descargarCV:hover {
+  box-shadow: 5px 7px 18px 7px rgb(221, 237, 231);
 }
 
-.grillaFooter {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.descargarCV {
-    background-color: rgb(246, 241, 241);
-    padding: 6px 8px;
-    border: 2px solid rgb(20, 108, 148);
-    border-radius: 7px;
-    font-family: 'Mukta', sans-serif;
-    font-size: 20px;
-    color: rgb(20, 108, 148);
-    text-decoration: none;
-}
-
-.descargarCV:hover {
-    box-shadow: 5px 7px 18px 7px rgb(221, 237, 231);
-}
-
-
-/*VISTA MOBILE*/ 
-
+/*VISTA MOBILE*/
 @media only screen and (min-width: 320px) and (max-width: 576px) {
-    
-    /*Header*/
-
-    header {
-        margin-bottom: 20%;
-    }
-
-    h1 {
-        font-size: 27px;
-    }
-
-    ul li a{
-        font-size: 18px;
-    }
-
-    h2{
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .navbar-toggler {
-        margin-bottom: 10px;
-    }
-
-
-    /*Main de la Pagina de Inicio*/
-    /*Sección Presentación de Inicio*/
-
-    .textoPresentacion {
-        margin-top: 20%;
-        width: 80%;
-        height: 45%;
-        padding: 5%;
-    }
-
-    .presentacion {
-        margin-top: 0;
-        margin-left: 0;
-        align-items: center;
-    }
-
-    .presentacion div img {
-        width: 84%;
-        margin-left: 8%;
-        align-self: center;
-        justify-self: center;
-    }
-
-    /*Sección Video de Inicio*/
-
-    #video {
-        height: 80%;
-        margin-left: 12%; 
-        margin-top: 20%;
-    }
-
-    /*Sección SobreMi de Inicio*/
-
-    .sobreMiTexto {
-        height: 50%;
-        width: 80%;
-        padding: 5%;
-        margin-top: 20%;
-        margin-left: 0;
-    }
-
-    .sobreMi {
-        margin-top: 0;
-        margin-bottom: 15%;
-        margin-left: 0;
-        align-items: center;
-    }
-
-    .sobreMi div img {
-        margin-top: 20%;
-        width: 100%;
-    }
-
-    .leerMas {
-        font-size: 16px;
-    }
-
-    .retrato {
-        padding-left: 0;
-        padding-right: 0;
-        width: 80%;
-    }
-
-
-    /*Main de la Pagina Sobre Mi*/
-    /*Seccion Sobre  Mi*/
-
-
-#sobreMi {
+  /*Header*/
+  header {
+    margin-bottom: 20%;
+  }
+  header h1 {
+    font-size: 27px;
+  }
+  header nav .navbar-toggler {
+    margin-bottom: 10px;
+  }
+  header nav ul li a {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  /*Main de la Pagina de Inicio*/
+  /*Sección Presentación de Inicio*/
+  section .presentacion {
+    margin-top: 0;
+    margin-left: 0;
+    align-items: center;
+  }
+  section .presentacion .textoPresentacion {
+    margin-top: 20%;
+    width: 80%;
+    height: 45%;
+    padding: 5%;
+  }
+  section .presentacion div img {
+    width: 84%;
+    margin-left: 8%;
+  }
+  /*Sección Video de Inicio*/
+  section #video {
+    height: 80%;
+    margin-left: 12%;
+    margin-top: 20%;
+  }
+  /*Sección SobreMi de Inicio*/
+  section .sobreMiI {
+    margin-top: 0;
+    margin-bottom: 15%;
+    margin-left: 0;
+    align-items: center;
+  }
+  section .sobreMiI .sobreMiTextoI {
+    height: 50%;
+    width: 80%;
+    padding: 5%;
+    margin-top: 20%;
+    margin-left: 0;
+  }
+  section .sobreMiI .sobreMiTextoI .leerMas {
+    font-size: 16px;
+  }
+  section .sobreMiI .retrato {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80%;
+  }
+  section .sobreMiI .retrato img {
+    margin-top: 20%;
+    width: 100%;
+  }
+  /*Main de la Pagina Sobre Mi*/
+  /*Seccion Sobre Mi*/
+  section .sobreMiS {
+    margin-top: 0;
+    margin-bottom: 15%;
+    margin-left: 0;
+    align-items: center;
+  }
+  section .sobreMiS .sobreMiTextoS {
+    width: 80%;
+    padding: 5%;
+    margin-left: 0;
     height: 60%;
     margin-top: 0;
-}
-
-#sobreMi p {
+  }
+  section .sobreMiS .sobreMiTextoS p {
     margin-bottom: 0;
-}
-
-.alinear {
-    margin-bottom: 0;
-}
-
-    /*Seccion Mi Carrera*/
-
-#miCarrera {
+  }
+  section .sobreMiS .retrato {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80%;
+  }
+  section .sobreMiS .retrato img {
+    margin-top: 20%;
+    width: 100%;
+  }
+  /*Seccion Mi Carrera*/
+  section .miCarrera {
+    margin-top: 0;
+    margin-bottom: 15%;
+    margin-left: 0;
+    align-items: center;
+  }
+  section .miCarrera .miCarreraTexto {
+    width: 80%;
+    padding: 5%;
+    margin-left: 0;
+    height: 185vh;
+    margin-top: 0;
     padding-bottom: 0;
-    height: 40%;
+  }
+  section .miCarrera .miCarreraTexto p {
+    margin-bottom: 0;
+  }
+  section .miCarrera .retrato {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80%;
+  }
+  section .miCarrera .retrato img {
+    margin-top: 20%;
+    width: 100%;
+  }
+  /*Main de la Pagina proyectos*/
+  /*Seccion Intro de proyectos*/
+  .intro {
+    padding: 5%;
+  }
+  .intro .introProyectos {
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    justify-items: center;
+    padding: 5%;
+  }
+  .intro .introProyectos div h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .intro .introProyectos div img {
+    width: 100%;
+  }
+  /*Seccion Intro de proyectos*/
+  .seccionProyectos {
+    height: 1000vh;
+    width: 100%;
+  }
+  .seccionProyectos .grillaProyectos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 13% 22% 14% 18% 10% 8%;
+    row-gap: 3%;
+    width: 100%;
+    margin-top: 30vh;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .seccionProyectos .grillaProyectos .proyectos {
+    width: 80%;
+    justify-self: center;
+    height: auto;
+    padding: 0;
+  }
+  .seccionProyectos .grillaProyectos .proyectos img {
+    width: 80%;
+  }
+  .seccionProyectos .grillaProyectos .proyectos details summary {
+    font-size: 16px;
+  }
+  /*Main de la Pagina Desarrollo*/
+  /*VER PQ QUEDA SIN CENTRAR LENGUAJES*/
+  /*Sección con intro de la Pagina*/
+  section .desarrollo {
+    height: fit-content;
+  }
+  section .desarrollo h2 {
+    text-align: center;
+  }
+  /*Sección de Lenguajes*/
+  section .lenguajes {
+    margin-left: 0;
+    margin-top: 7%;
+  }
+  section .lenguajes div img {
+    width: 85%;
+    margin-left: 8%;
+  }
+  section .lenguajes .lenguajesTexto {
+    padding: 5%;
+    width: 88%;
+    height: fit-content;
+    margin-top: 7%;
+  }
+  /*Main de la Pagina Contacto*/
+  /*Sección intro del form*/
+  section .flexContacto div p {
+    font-size: 16px;
+  }
+  /*Formulario*/
+  form {
+    width: 80%;
+    height: fit-content;
+  }
+  form div {
+    flex-direction: column;
+    width: 100%;
+  }
+  form div input[type=text],
+  form div input[type=email], form div textarea {
+    width: 97%;
+  }
+  form .boton {
+    align-items: center;
+  }
+  form .boton button {
+    font-size: 16px;
+  }
+  /*Footer*/
+  footer {
+    height: auto;
+  }
+  footer .grillaFooter {
+    flex-direction: column;
+  }
+  footer .grillaFooter p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 9px;
+  }
+  footer .grillaFooter #imgMail {
+    display: none;
+  }
+  footer .grillaFooter a img {
+    width: 90px;
+    height: 50px;
+  }
+  footer .grillaFooter .descargarCV {
+    font-size: 11px;
+    margin-top: 10px;
+  }
 }
 
-
-    /*Main de la Pagina proyectos*/
-
-    .intro {
-        padding: 5%;
-    }
-
-    .introProyectos {
-        height: auto;
-        width: 90%;
-        margin-left: 5%;
-        justify-items: center;
-        padding: 5%;
-    }
-
-    .introProyectos div h2 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .introProyectos div img {
-        width: 100%;
-    }
-
-    .grillaProyectos {
-        grid-template-columns: 1fr;
-        grid-template-rows: 13% 22% 14% 18% 10% 8%;
-        row-gap: 3%;
-        width: 100%;
-        margin-top: 30vh;
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-    
-    .seccionProyectos {
-        height: 1000vh;
-        width: 100%;
-    }
-    
-    .proyectos details summary {
-        font-size: 16px;
-    }
-
-    .proyectos {
-        width: 80%;
-        justify-self: center;
-        height: auto;
-        padding: 0;
-    }
-
-    .proyectos img {
-        width: 80%;
-    }
-
-    /*Main de la Pagina Desarrollo*/
-
-    .desarrollo h2 {
-        text-align: center;
-    }
-
-    .desarrollo {
-        height: fit-content;
-    }
-
-    .lenguajes {
-        margin-left: 0;
-        margin-top: 7%;
-    }
-
-    .lenguajesTexto {
-        padding: 5%;
-        width: 88%;
-        height: fit-content;
-        margin-top: 7%;
-    }
-
-    .lenguajes div img {
-        width: 85%;
-        margin-left: 8%;
-    }
-
-    /*Main de la Pagina Contacto*/
-
-    .flexcontacto div p {
-        font-size: 16px;
-    }
-
-    form {
-        width: 80%;
-        height: fit-content;
-    }
-
-    form div {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .boton {
-        align-items: center;
-    }
-
-    .boton button {
-        font-size: 16px;
-    }
-
-    input[type=text],
-    input[type=email], textarea {
-        width: 97%;
-    }
-
-
-    /*Footer*/
-
-    footer{
-        height: auto;
-    }
-    
-    footer div div div a img {
-        width: 90px;
-        height: 50px;
-    }
-
-    #imgMail {
-        display: none;
-    }
-
-    .grillaFooter p {
-        font-size: 12px;
-        text-align: center;
-        margin-top: 9px;
-    }
-    
-    .grillaFooter{
-        flex-direction: column;
-    }
-
-    .descargarCV {
-        font-size: 11px;
-        margin-top: 10px;
-    }
-}
+/*# sourceMappingURL=estilos.css.map */
