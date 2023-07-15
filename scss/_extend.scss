@@ -1,0 +1,16 @@
+/*Estilo de pestañas del nav del header*/
+%pestaniasNav {
+    color: map-get($colorFuente, celesteClaro);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: $font;
+}
+
+/*Estilo comun en divs e imagenes*/
+
+%divs {
+    border-radius: 10px;
+    border-right: $bordeGral;
+    border-bottom: $bordeGral;
+    box-shadow: $sombreadoGral;
+}

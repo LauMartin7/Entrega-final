@@ -1,0 +1,68 @@
+/*Header de todas las paginas*/
+
+header {
+    background-color: map-get($fondos, turquesa);
+    width: $full-width;
+    margin-bottom: 100px;
+    border-bottom: $bordeHeader;
+    h1 {
+        font-family: $font;
+        text-shadow: 3px 7px 2px rgba(27, 29, 29, 0.243);
+        font-size: 40px;
+        text-align: center;
+        color: map-get($colorFuente, celesteClaro);
+        letter-spacing: 2px;
+    };
+    div {
+        div{
+            @include flexAbreviado (flex, row, flex-start, center);
+        }
+    };
+    &.headerIndex {
+        margin-bottom: 0;
+    }
+
+    nav{
+    &.navbar {
+        background-color: map-get($fondos, turquesa);
+        padding-bottom: 0;
+    }
+
+    &.navbar-light {
+        @extend %pestaniasNav;
+        div {
+            div{
+                ul {
+                    list-style-type: none;
+                    margin-bottom: 0;
+                &.navbar-nav{
+                    @extend %pestaniasNav;
+                    li {
+                        width: 220px;
+                        @include flex(inline-flex, row wrap, center, center);
+                        a {
+                        &.nav-link {
+                            @extend %pestaniasNav;
+                        }
+                        &:hover {
+                            width: $full-width;
+                            background-color: map-get($fondos, gris);
+                            text-align: center;
+                            color: map-get($colorFuente, celesteClaro);
+                        }
+                        }
+                    }
+                }
+                }
+            };
+            .navbar-toggler {
+                background-color: map-get($fondos, casiBlanco);
+            }
+        }
+    }
+    }
+
+    &.headerDesarrollo {
+        margin-bottom: 0;
+    }
+}

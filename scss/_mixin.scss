@@ -1,0 +1,28 @@
+/*Medidas*/
+@mixin medidas ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/*Display Flex con flex flow*/
+@mixin flex ($display, $direccion, $horizontal, $vertical) {
+    display: $display;
+    flex-flow: $direccion;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+/*Display Flex con flex direction*/
+@mixin flexAbreviado ($display, $direccionSinWrap, $horizontal, $vertical) {
+    display: flex;
+    flex-direction: $direccionSinWrap;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+/*Estilo de imagen de fondo*/
+@mixin imagenFondo ($size, $repeat, $position) {
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+}
+

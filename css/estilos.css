@@ -1,5 +1,33 @@
 @charset "UTF-8";
+/*Variables*/
 /*Tipografía*/
+/*Borde*/
+/*Sombreado*/
+/*Ancho*/
+/*Maps*/
+/*Extend*/
+/*Estilo de pestañas del nav del header*/
+header nav.navbar-light div div ul.navbar-nav li a.nav-link, header nav.navbar-light div div ul.navbar-nav, header nav.navbar-light {
+  color: rgb(175, 211, 226);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+/*Estilo comun en divs e imagenes*/
+section .lenguajes .lenguajesTexto, #desarrollo section .flexDesarrollo .desarrollo, section .miCarrera .retrato img, section .miCarrera .miCarreraTexto, section .sobreMiS .retrato img, section .sobreMiS .sobreMiTextoS, section .sobreMiI .sobreMiTextoI, section #video, section .presentacion .textoPresentacion, section .presentacion img {
+  border-radius: 10px;
+  border-right: 5px solid rgb(25, 167, 206);
+  border-bottom: 5px solid rgb(25, 167, 206);
+  box-shadow: 0px 15px 20px gray;
+}
+
+/*Mixins*/
+/*Medidas*/
+/*Display Flex con flex flow*/
+/*Display Flex con flex direction*/
+/*Estilo de imagen de fondo*/
+/*Generales*/
 * {
   padding: 0;
   margin: 0;
@@ -8,80 +36,12 @@
 
 /*Body de todas las paginas*/
 body {
-  background-color: #f6f1f1;
+  background-color: rgb(246, 241, 241);
 }
 body p {
   font-family: sans-serif;
   font-size: 20px;
   color: rgb(20, 108, 148);
-}
-
-/*Header de todas las paginas*/
-header {
-  background-color: rgb(20, 108, 148);
-  width: 100%;
-  margin-bottom: 100px;
-}
-header h1 {
-  font-family: sans-serif;
-  text-shadow: 3px 7px 2px rgba(27, 29, 29, 0.243);
-  font-size: 40px;
-  text-align: center;
-  color: rgb(175, 211, 226);
-  letter-spacing: 2px;
-}
-header div div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-header.headerIndex {
-  margin-bottom: 0;
-}
-header nav.navbar {
-  background-color: rgb(20, 108, 148) !important;
-  padding-bottom: 0;
-}
-header nav.navbar-light {
-  color: rgb(175, 211, 226);
-  font-weight: bold;
-  font-size: 20px;
-  font-family: sans-serif;
-}
-header nav.navbar-light div div ul {
-  list-style-type: none;
-  margin-bottom: 0;
-}
-header nav.navbar-light div div ul.navbar-nav {
-  color: rgb(175, 211, 226);
-  font-weight: bold;
-  font-size: 20px;
-  font-family: sans-serif;
-}
-header nav.navbar-light div div ul.navbar-nav li {
-  width: 220px;
-  display: inline-flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-}
-header nav.navbar-light div div ul.navbar-nav li a.nav-link {
-  color: rgb(175, 211, 226);
-  font-weight: bold;
-  font-size: 20px;
-  font-family: sans-serif;
-}
-header nav.navbar-light div div ul.navbar-nav li a:hover {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  text-align: center;
-  color: rgb(175, 211, 226) !important;
-}
-header nav.navbar-light div .navbar-toggler {
-  background-color: rgb(175, 211, 226);
-}
-header.headerDesarrollo {
-  margin-bottom: 0;
 }
 
 /*Main de todas las paginas*/
@@ -94,7 +54,63 @@ main h2 {
   color: rgb(20, 108, 148);
   font-weight: bold;
 }
-main.mainIndex {
+
+/*Header*/
+/*Header de todas las paginas*/
+header {
+  background-color: rgb(20, 108, 148);
+  width: 100%;
+  margin-bottom: 100px;
+  border-bottom: 7px double rgba(44, 42, 42, 0.243);
+}
+header h1 {
+  font-family: sans-serif;
+  text-shadow: 3px 7px 2px rgba(27, 29, 29, 0.243);
+  font-size: 40px;
+  text-align: center;
+  color: rgb(175, 211, 226);
+  letter-spacing: 2px;
+}
+header div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+header.headerIndex {
+  margin-bottom: 0;
+}
+header nav.navbar {
+  background-color: rgb(20, 108, 148);
+  padding-bottom: 0;
+}
+header nav.navbar-light div div ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+header nav.navbar-light div div ul.navbar-nav li {
+  width: 220px;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+header nav.navbar-light div div ul.navbar-nav li a:hover {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: rgb(175, 211, 226);
+}
+header nav.navbar-light div .navbar-toggler {
+  background-color: rgb(246, 241, 241);
+}
+header.headerDesarrollo {
+  margin-bottom: 0;
+}
+
+/*Index*/
+/*INDEX*/
+.mainIndex {
   padding-top: 100px;
   background-image: url(../img/binario.png);
   background-size: auto;
@@ -102,42 +118,37 @@ main.mainIndex {
   background-position: top left;
 }
 
-/*INDEX*/
 /*Sección presentación de Inicio*/
-section.codigo {
+section.codigoI {
   background-image: url(../img/binario3.png);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: right;
 }
 section .presentacion {
-  background-image: url(../img/binario2.png);
+  background-image: url(../img/binario3.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 section .presentacion img {
   width: 100%;
-  border: 5px solid rgb(25, 167, 206);
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px;
 }
 section .presentacion .textoPresentacion {
   width: 30%;
   height: 20%;
-  padding: 50px;
   background-color: rgb(175, 211, 226);
-  border: 5px solid rgb(25, 167, 206);
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px;
+  padding: 50px;
 }
 section .presentacion .textoPresentacion p {
   margin-top: 20px;
 }
 
+/*INDEX*/
 /*Sección video de Inicio*/
 section #video {
   width: 100%;
@@ -145,9 +156,6 @@ section #video {
   margin-left: 162px;
   margin-top: 120px;
   object-fit: cover;
-  border: 5px solid rgb(25, 167, 206);
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px;
 }
 
 /*Sección Sobre mi de Inicio*/
@@ -158,14 +166,12 @@ section .sobreMiI {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 section .sobreMiI .sobreMiTextoI {
   height: 480px;
   padding: 50px;
   background-color: rgb(175, 211, 226);
-  border: 5px solid rgb(25, 167, 206);
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px;
   margin-left: 14px;
 }
 section .sobreMiI .sobreMiTextoI p {
@@ -184,15 +190,17 @@ section .sobreMiI .sobreMiTextoI .leerMas {
   text-decoration: none;
 }
 section .sobreMiI .sobreMiTextoI .leerMas:hover {
-  box-shadow: 5px 7px 18px 10px rgb(221, 237, 231);
+  box-shadow: 5px 7px 15px 7px rgba(65, 64, 64, 0.2);
 }
 section .sobreMiI .retrato img {
-  border: 5px solid rgb(25, 167, 206);
+  border-right: 5px solid rgb(25, 167, 206);
+  border-bottom: 5px solid rgb(25, 167, 206);
   border-radius: 10px;
-  box-shadow: 10px 10px 15px;
+  box-shadow: 0px 15px 20px gray;
   width: 100%;
 }
 
+/*SobreMi*/
 /*SOBRE MI*/
 /*Seccion SobreMi de SobreMi */
 section .sobreMiS {
@@ -200,6 +208,7 @@ section .sobreMiS {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: center;
   margin-left: 12px;
   margin-bottom: 100px;
 }
@@ -207,9 +216,6 @@ section .sobreMiS .sobreMiTextoS {
   height: 540px;
   padding: 50px;
   background-color: rgb(175, 211, 226);
-  border: 5px solid rgb(25, 167, 206);
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px;
   margin-left: 14px;
 }
 section .sobreMiS .sobreMiTextoS p {
@@ -218,18 +224,22 @@ section .sobreMiS .sobreMiTextoS p {
   margin-bottom: 30px;
 }
 section .sobreMiS .retrato img {
-  border: 5px solid rgb(25, 167, 206);
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px;
   width: 100%;
 }
 
 /*Seccion Mi Carrera de SobreMi*/
+section.codigoS {
+  background-image: url(../img/binario2.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
 section .miCarrera {
   margin-top: 100px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: center;
   margin-left: 50px;
   margin-bottom: 150px;
 }
@@ -237,9 +247,6 @@ section .miCarrera .miCarreraTexto {
   height: 570px;
   padding: 50px;
   background-color: rgb(175, 211, 226);
-  border: 5px solid rgb(25, 167, 206);
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px;
   margin-left: 14px;
 }
 section .miCarrera .miCarreraTexto p {
@@ -248,12 +255,10 @@ section .miCarrera .miCarreraTexto p {
   margin-bottom: 30px;
 }
 section .miCarrera .retrato img {
-  border: 5px solid rgb(25, 167, 206);
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px;
   width: 100%;
 }
 
+/*Proyectos*/
 /*PROYECTOS*/
 /*Sección con intro de Proyectos*/
 .intro {
@@ -261,20 +266,22 @@ section .miCarrera .retrato img {
   padding: 100px;
   background-image: url(../img/chicaCodigo.jpg);
   background-size: contain;
+  background-repeat: repeat;
   background-position: center;
 }
 .intro .introProyectos {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
   justify-content: center;
-  height: 300px;
+  align-items: center;
   width: 850px;
+  height: 300px;
   padding: 30px;
   background-color: rgb(175, 211, 226);
-  border: 5px solid rgb(25, 167, 206);
+  border-right: 5px solid rgb(25, 167, 206);
+  border-bottom: 5px solid rgb(25, 167, 206);
   border-radius: 40px;
-  box-shadow: 10px 10px 15px;
+  box-shadow: 0px 15px 20px gray;
   margin-left: 180px;
 }
 .intro .introProyectos div h2 {
@@ -284,6 +291,7 @@ section .miCarrera .retrato img {
   text-align: justify;
 }
 
+/*PROYECTOS*/
 /*Sección Proyectos de Proyectos*/
 .grillaProyectos {
   display: grid;
@@ -294,7 +302,7 @@ section .miCarrera .retrato img {
   margin-top: 100px;
 }
 .grillaProyectos .proyectos {
-  background-color: #f6f1f1;
+  background-color: rgb(246, 241, 241);
   width: 370px;
   height: 300px;
   padding: 10px;
@@ -302,7 +310,8 @@ section .miCarrera .retrato img {
 }
 .grillaProyectos .proyectos details summary {
   background-color: rgb(20, 108, 148);
-  border: 2px solid rgb(20, 108, 148);
+  border-right: 4px double rgb(25, 167, 206);
+  border-bottom: 4px double rgb(25, 167, 206);
   padding: 5px;
   cursor: pointer;
   font-family: sans-serif;
@@ -333,7 +342,7 @@ section .miCarrera .retrato img {
   text-decoration: none;
 }
 .grillaProyectos .proyectos details div .irAlSitio:hover {
-  box-shadow: 5px 7px 20px 2px rgb(221, 237, 231);
+  box-shadow: 5px 7px 15px 7px rgba(65, 64, 64, 0.2);
 }
 .grillaProyectos .proyectos details p {
   background-color: rgb(175, 211, 226);
@@ -348,25 +357,26 @@ section .miCarrera .retrato img {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
+/*Desarrollo del sitio*/
 /*DESARROLLO*/
 #desarrollo {
   padding-bottom: 100px;
   padding-top: 100px;
   background-image: url(../img/codigo.jpg);
-  background-size: cover;
+  background-size: auto;
+  background-repeat: repeat;
   background-position: center;
   /*--Seccion con explicación del sitio/intro de la página*/
 }
 #desarrollo section .flexDesarrollo {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 #desarrollo section .flexDesarrollo .desarrollo {
   padding: 50px;
   background-color: rgb(175, 211, 226);
-  border: 5px solid rgb(25, 167, 206);
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px;
 }
 #desarrollo section .flexDesarrollo .desarrollo p {
   margin-top: 20px;
@@ -384,14 +394,14 @@ section .lenguajes {
   margin-left: 0;
   margin-right: 0;
 }
+section .lenguajes div img {
+  filter: drop-shadow(0px 15px 20px gray);
+}
 section .lenguajes .lenguajesTexto {
   width: 460px;
   height: fit-content;
   padding: 20px;
   background-color: rgb(175, 211, 226);
-  border: 5px solid rgb(25, 167, 206);
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px;
   text-align: center;
 }
 section .lenguajes .lenguajesTexto h3 {
@@ -402,18 +412,20 @@ section .lenguajes .lenguajesTexto h3 {
   text-align: center;
 }
 
+/*Contacto*/
 /*CONTACTO*/
 #contacto {
   background-image: url(../img/correo.png);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   padding-bottom: 100px;
 }
 #contacto section .flexContacto {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -444,8 +456,10 @@ section .lenguajes .lenguajesTexto h3 {
   width: 400px;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
   justify-content: center;
+  align-items: baseline;
+  color: rgb(20, 108, 148);
+  font-size: 18px;
 }
 #contacto form div input[type=text],
 #contacto form div input[type=email] {
@@ -466,8 +480,10 @@ section .lenguajes .lenguajesTexto h3 {
 #contacto form div ::placeholder {
   font-family: sans-serif;
   color: rgb(25, 167, 206);
+  font-size: 16px;
 }
 #contacto form .boton button {
+  width: 50%;
   background-color: rgb(246, 241, 241);
   padding: 6px 8px;
   margin-top: 20px;
@@ -477,20 +493,29 @@ section .lenguajes .lenguajesTexto h3 {
   font-size: 20px;
   color: rgb(20, 108, 148);
 }
+#contacto form .boton button:hover {
+  box-shadow: 5px 7px 15px 7px rgba(65, 64, 64, 0.2);
+}
 
+/*Footer*/
 /*Footer*/
 footer {
   background-color: rgb(25, 167, 206);
-  height: 150px;
   width: 100%;
+  height: 150px;
   padding-top: 2%;
 }
 footer .grillaFooter {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   text-align: center;
+}
+footer .grillaFooter p {
+  color: rgb(175, 211, 226);
+  text-shadow: 3px 3px 5px rgb(20, 108, 148);
+  font-weight: bold;
 }
 footer .grillaFooter .descargarCV {
   background-color: rgb(246, 241, 241);
@@ -503,9 +528,13 @@ footer .grillaFooter .descargarCV {
   text-decoration: none;
 }
 footer .grillaFooter .descargarCV:hover {
-  box-shadow: 5px 7px 18px 7px rgb(221, 237, 231);
+  box-shadow: 5px 7px 15px 7px rgba(65, 64, 64, 0.2);
+}
+footer .grillaFooter .linkedin:hover {
+  filter: drop-shadow(0px 15px 20px gray);
 }
 
+/*Media queries*/
 /*VISTA MOBILE*/
 @media only screen and (min-width: 320px) and (max-width: 576px) {
   /*Header*/
@@ -558,8 +587,8 @@ footer .grillaFooter .descargarCV:hover {
     align-items: center;
   }
   section .sobreMiI .sobreMiTextoI {
-    height: 50%;
     width: 80%;
+    height: 50%;
     padding: 5%;
     margin-top: 20%;
     margin-left: 0;
@@ -586,9 +615,9 @@ footer .grillaFooter .descargarCV:hover {
   }
   section .sobreMiS .sobreMiTextoS {
     width: 80%;
+    height: 60%;
     padding: 5%;
     margin-left: 0;
-    height: 60%;
     margin-top: 0;
   }
   section .sobreMiS .sobreMiTextoS p {
@@ -612,9 +641,9 @@ footer .grillaFooter .descargarCV:hover {
   }
   section .miCarrera .miCarreraTexto {
     width: 80%;
+    height: fit-content;
     padding: 5%;
     margin-left: 0;
-    height: fit-content;
     margin-top: 0;
     padding-bottom: 0;
   }
@@ -637,8 +666,8 @@ footer .grillaFooter .descargarCV:hover {
     padding: 5%;
   }
   .intro .introProyectos {
-    height: auto;
     width: 90%;
+    height: auto;
     margin-left: 5%;
     justify-items: center;
     padding: 5%;
@@ -652,8 +681,8 @@ footer .grillaFooter .descargarCV:hover {
   }
   /*Seccion Intro de proyectos*/
   .seccionProyectos {
-    height: 700vh;
     width: 100%;
+    height: 700vh;
   }
   .seccionProyectos .grillaProyectos {
     grid-template-columns: 1fr;
@@ -708,6 +737,7 @@ footer .grillaFooter .descargarCV:hover {
   #contacto form div {
     flex-direction: column;
     width: 100%;
+    margin-bottom: 5%;
   }
   #contacto form div input[type=text],
   #contacto form div input[type=email], #contacto form div textarea {
@@ -718,6 +748,7 @@ footer .grillaFooter .descargarCV:hover {
   }
   #contacto form .boton button {
     font-size: 16px;
+    width: 60%;
   }
   /*Footer*/
   footer {
@@ -741,6 +772,7 @@ footer .grillaFooter .descargarCV:hover {
   footer .grillaFooter .descargarCV {
     font-size: 11px;
     margin-top: 10px;
+    width: 70%;
   }
 }
 

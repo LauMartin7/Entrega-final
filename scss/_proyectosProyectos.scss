@@ -1,0 +1,67 @@
+/*PROYECTOS*/
+
+/*Sección Proyectos de Proyectos*/
+.grillaProyectos {
+    display: grid;
+    width: $full-width;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 150px;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    .proyectos {
+        background-color: map-get($fondos, casiBlanco);
+        @include medidas(370px, 300px);
+        padding: 10px;
+        text-align: center;
+        details {
+            summary {
+                background-color: map-get($fondos, turquesa);
+                border-right: 4px double rgb(25, 167, 206);
+                border-bottom: 4px double rgb(25, 167, 206);
+                padding: 5px;
+                cursor: pointer;
+                font-family: $font;
+                font-size: 18px;
+                font-weight: bold;
+                color: map-get($colorFuente , celesteClaro);
+                text-align: center;
+                &:hover {
+                    background-color:  rgba(20, 108, 148, 0.8);
+                }
+                &:active {
+                    background-color:  rgba(20, 108, 148, 0.8);
+                }
+            }
+            div {
+                background-color: map-get($fondos, celesteClaro);
+                box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+                padding-bottom: 20px;
+                .irAlSitio {
+                    background-color: map-get($fondos, casiBlanco);
+                    padding: 6px 8px;
+                    border: $bordeBoton;
+                    border-radius: 7px;
+                    font-family: $font;
+                    font-size: 20px;
+                    color: map-get($colorFuente , turquesa);
+                    text-decoration: none;
+                    &:hover {
+                        box-shadow: $sombreadoHover;
+                    }
+                }
+            }
+            p {
+                background-color: map-get($fondos, celesteClaro);
+                color: map-get($colorFuente , turquesa);
+                padding: 10px;
+                height: fit-content;
+                font-family: $font;
+                font-size: 16px;
+                text-align: justify;
+                &:not(.malagueta) {
+                    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+    }
+}

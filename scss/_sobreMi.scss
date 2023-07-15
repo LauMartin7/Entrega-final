@@ -1,0 +1,60 @@
+/*SOBRE MI*/
+
+/*Seccion SobreMi de SobreMi */
+section {
+    .sobreMiS {
+        margin-top: 100px;
+        @include flex(flex, row wrap, space-evenly, center);
+        margin-left: 12px;
+        margin-bottom: 100px;
+        .sobreMiTextoS {
+            height: 540px;
+            @extend %divs;
+            padding: 50px;
+            background-color: map-get($fondos, celesteClaro);
+                margin-left: 14px;
+            p {
+                margin-top: 20px;
+                text-align: justify;
+                margin-bottom: 30px;
+            }
+        };
+        .retrato {
+            img {
+                @extend %divs;
+                width: $full-width;
+            }
+        }
+    }
+}
+/*Seccion Mi Carrera de SobreMi*/
+section {
+    &.codigoS{
+        background-image: url(../img/binario2.png);
+        @include imagenFondo(auto, no-repeat, bottom left);
+    };
+    .miCarrera {
+        margin-top: 100px;
+        @include flex(flex, row wrap, space-evenly, center);
+        margin-left: 50px;
+        margin-bottom: 150px;
+        .miCarreraTexto {
+            height: 570px;
+            padding: 50px;
+            @extend %divs;
+            background-color: map-get($fondos, celesteClaro);
+            margin-left: 14px;
+            p {
+                margin-top: 20px;
+                text-align: justify;
+                margin-bottom: 30px;
+            }
+        };
+        .retrato {
+            img {
+                @extend %divs;
+                width: $full-width;
+            }
+        }
+    }
+}

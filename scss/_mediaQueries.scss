@@ -1,0 +1,293 @@
+/*VISTA MOBILE*/ 
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    
+    /*Header*/
+
+    header {
+        margin-bottom: 20%;
+        h1 {
+            font-size: 30px;
+        }
+        nav {
+            .navbar-toggler {
+                margin-bottom: 10px;
+            }
+            ul {
+                li {
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        h2 {
+            font-size: 20px;
+        };
+        p {
+            font-size: 16px;
+        }
+    }
+    
+
+
+    /*Main de la Pagina de Inicio*/
+    
+    
+    /*Sección Presentación de Inicio*/
+    section {
+        .presentacion {
+            margin-top: 0;
+            margin-left: 0;
+            align-items: center;
+            .textoPresentacion {
+                margin-top: 20%;
+                @include medidas(80%, 45%);
+                padding: 5%;
+            }
+            div {
+                img {
+                    width: 84%;
+                    margin-left: 8%;
+                }
+            }
+        }
+    }
+    /*Sección Video de Inicio*/
+    section {
+        #video {
+            height: 80%;
+            margin-left: 12%; 
+            margin-top: 20%;
+        }
+    }
+    /*Sección SobreMi de Inicio*/
+    section {
+        .sobreMiI {
+            margin-top: 0;
+            margin-bottom: 15%;
+            margin-left: 0;
+            align-items: center;
+            .sobreMiTextoI {
+                @include medidas(80%, 50%);
+                padding: 5%;
+                margin-top: 20%;
+                margin-left: 0;
+                .leerMas {
+                    font-size: 16px;
+                }
+            }
+            .retrato {
+                padding-left: 0;
+                padding-right: 0;
+                width: 80%;
+                img {
+                    margin-top: 20%;
+                    width: $full-width;
+                }
+            }
+        }        
+    }
+    
+    
+    /*Main de la Pagina Sobre Mi*/
+
+    
+    /*Seccion Sobre Mi*/
+    section {
+        .sobreMiS {
+            margin-top: 0;
+            margin-bottom: 15%;
+            margin-left: 0;
+            align-items: center;
+            .sobreMiTextoS {
+                @include medidas(80%, 60%);
+                padding: 5%;
+                margin-left: 0;
+                margin-top: 0;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            .retrato {
+                padding-left: 0;
+                padding-right: 0;
+                width: 80%;
+                img {
+                    margin-top: 20%;
+                    width: $full-width;
+                }
+            }
+        }
+    }
+    /*Seccion Mi Carrera*/
+    section {
+        .miCarrera {
+            margin-top: 0;
+            margin-bottom: 15%;
+            margin-left: 0;
+            align-items: center;
+            .miCarreraTexto {
+                @include medidas(80%, fit-content);
+                padding: 5%;
+                margin-left: 0;
+                margin-top: 0;
+                padding-bottom: 0;
+                p {
+                    margin-bottom: 0;
+                    padding-bottom: 5vh;
+                }
+            }
+            .retrato {
+                padding-left: 0;
+                padding-right: 0;
+                width: 80%;
+                img {
+                    margin-top: 20%;
+                    width: $full-width;
+                }
+            }
+        }
+    }
+
+    /*Main de la Pagina proyectos*/
+    /*Seccion Intro de proyectos*/
+    .intro {
+        padding: 5%;
+        .introProyectos {
+            @include medidas(90%, auto);
+            margin-left: 5%;
+            justify-items: center;
+            padding: 5%;
+            div {
+                h2 {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+            div {
+                img {
+                    width: $full-width;
+                }
+            }
+        }
+    }
+    /*Seccion Intro de proyectos*/
+    .seccionProyectos {
+        @include medidas($full-width, 700vh);
+        .grillaProyectos {
+            grid-template-columns: 1fr;
+            grid-template-rows: 13% 22% 14% 18% 10% 8%;
+            row-gap: 6%;
+            width: $full-width;
+            margin-top: 20vh;
+            margin-left: 0;
+            margin-bottom: 0;
+            .proyectos {
+                width: 80%;
+                justify-self: center;
+                height: auto;
+                padding: 0;
+                img {
+                    width: 80%;
+                }
+                details {
+                    summary {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*Main de la Pagina Desarrollo*/
+
+    /*Sección con intro de la Pagina*/
+    section {
+        .desarrollo {
+            height: fit-content;
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+    /*Sección de Lenguajes*/
+    section {
+        .lenguajes {
+            margin-left: 0;
+            margin-top: 7%;
+            div {
+                img {
+                    width: 85%;
+                    margin-left: 8%;
+                }
+            }
+            .lenguajesTexto {
+                padding: 5%;
+                width: 88%;
+                height: fit-content;
+                margin-top: 7%;
+            }
+        }
+    }
+
+
+    /*Main de la Pagina Contacto*/
+
+
+    /*Formulario*/
+    #contacto {
+        form {
+            width: 80%;
+            height: fit-content;
+            div {
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 5%;
+                input[type=text],
+                input[type=email], textarea {
+                    width: 97%;
+                }
+            }
+            .boton {
+                align-items: center;
+                button {
+                    font-size: 16px;
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+
+    /*Footer*/
+
+    footer{
+        height: auto;
+        .grillaFooter{
+            flex-direction: column;
+            p {
+                font-size: 12px;
+                text-align: center;
+                margin-top: 9px;
+            };
+            #imgMail {
+                display: none;
+            };
+            a {
+                img {
+                    @include medidas(90px, 50px);
+                };
+            }
+            .descargarCV {
+            font-size: 11px;
+            margin-top: 10px;
+            width: 70%;
+            }
+        }
+    }
+}

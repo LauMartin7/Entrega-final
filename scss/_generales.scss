@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*Body de todas las paginas*/
+body {
+    background-color: map-get($fondos, casiBlanco);
+    p {
+        font-family: $font;
+        font-size: 20px;
+        color: map-get($colorFuente, turquesa);
+    }
+}
+/*Main de todas las paginas*/
+main {
+    width: $full-width;
+    h2 {
+        font-family: $font;
+        font-size: 30px;
+        color: map-get($colorFuente, turquesa);
+        font-weight: bold;
+    }
+}

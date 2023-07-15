@@ -1,0 +1,34 @@
+    /*Footer*/
+
+    footer {
+        background-color: map-get($fondos, celesteOscuro);
+        @include medidas($full-width, 150px);
+        padding-top: 2%;
+        .grillaFooter {
+            @include flex(flex, row wrap, space-around, center);
+            text-align: center;
+            p {
+                color: map-get($colorFuente, celesteClaro);
+                text-shadow: 3px 3px 5px rgb(20, 108, 148);
+                font-weight: bold;
+            };
+            .descargarCV {
+                background-color: map-get($fondos, casiBlanco);
+                padding: 6px 8px;
+                border: $bordeBoton;
+                border-radius: 7px;
+                font-family: $font;
+                font-size: 20px;
+                color: map-get($colorFuente, turquesa);
+                text-decoration: none;
+                &:hover {
+                    box-shadow: $sombreadoHover;
+                }
+            };
+            .linkedin {
+                &:hover{
+                    filter: drop-shadow($sombreadoGral);
+                }
+            }
+        };
+    }

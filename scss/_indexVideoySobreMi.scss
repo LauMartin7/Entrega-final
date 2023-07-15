@@ -1,0 +1,56 @@
+/*INDEX*/
+/*Sección video de Inicio*/
+section {
+    #video {
+        width: $full-width;
+        height: 400px;
+        margin-left: 162px;
+        margin-top: 120px;
+        object-fit: cover;
+        @extend %divs;
+    }
+}
+
+/*Sección Sobre mi de Inicio*/
+section {
+    .sobreMiI {
+        margin-left: 50px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        @include flex(flex, row wrap, space-evenly, center);
+        .sobreMiTextoI {
+            height: 480px;
+            @extend %divs;
+            padding: 50px;
+            background-color: map-get($fondos, celesteClaro);
+            margin-left: 14px;
+            p {
+                margin-top: 20px;
+                text-align: justify;
+                margin-bottom: 30px;
+            };
+            .leerMas {
+                background-color: map-get($fondos, casiBlanco);
+                padding: 6px 8px;
+                border: $bordeBoton;
+                border-radius: 7px;
+                font-family: $font;
+                font-size: 20px;
+                color: map-get($colorFuente , turquesa);
+                text-decoration: none;
+                &:hover {
+                    box-shadow: $sombreadoHover;
+                }
+            }
+        };
+        .retrato {
+            img {
+                border-right: $bordeGral;
+                border-bottom: $bordeGral;
+                border-radius: 10px;
+                box-shadow: $sombreadoGral;
+                width: $full-width;
+            }
+        }
+    }
+}

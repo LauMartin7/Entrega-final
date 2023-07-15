@@ -1,0 +1,33 @@
+/*INDEX*/
+
+.mainIndex {
+    padding-top: 100px;
+    background-image: url(../img/binario.png);
+    @include imagenFondo(auto, no-repeat, top left);
+}
+
+/*Sección presentación de Inicio*/
+section {
+    &.codigoI{
+        background-image: url(../img/binario3.png);
+        @include imagenFondo(auto, no-repeat, right);
+    };
+    .presentacion {
+        background-image: url(../img/binario3.png);
+        @include imagenFondo(contain, no-repeat, center);
+        @include flex(flex, row wrap, space-evenly, center);
+        img {
+            width: $full-width;
+            @extend %divs;
+        };
+        .textoPresentacion {
+            @include medidas (30%, 20%);
+            @extend %divs;
+            background-color: map-get($fondos, celesteClaro);
+            padding: 50px;
+            p {
+                margin-top: 20px;
+            }
+        }
+    }
+}

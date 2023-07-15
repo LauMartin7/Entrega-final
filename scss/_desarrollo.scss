@@ -1,0 +1,55 @@
+/*DESARROLLO*/
+
+#desarrollo {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-image: url(../img/codigo.jpg);
+    @include imagenFondo(auto, repeat, center);
+
+    /*--Seccion con explicación del sitio/intro de la página*/
+
+    section {
+        .flexDesarrollo {
+            @include flex(flex, row wrap, center, center);
+            .desarrollo {
+                @extend %divs;
+                padding: 50px;
+                background-color: map-get($fondos, celesteClaro);
+                p {
+                    margin-top: 20px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    }
+
+/*--Seccion de lenguajes usados*/
+    section {
+        .lenguajes{
+            @include flex(flex, row wrap, center, center);
+            margin-top: 80px;
+            width: $full-width;
+            margin-left: 0;
+            margin-right: 0;
+            div {
+                img {
+                    filter: drop-shadow($sombreadoGral);
+                }
+            };
+            .lenguajesTexto {
+                @include medidas (460px, fit-content);
+                padding: 20px;
+                background-color: map-get($fondos, celesteClaro);
+                @extend %divs;
+                text-align: center;
+                h3 {
+                    font-family: $font;
+                    font-size: 25px;
+                    color: map-get($colorFuente, turquesa);
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+    }

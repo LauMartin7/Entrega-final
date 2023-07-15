@@ -1,0 +1,76 @@
+/*CONTACTO*/
+
+#contacto {
+    background-image: url(../img/correo.png);
+    @include imagenFondo(cover, no-repeat, center);
+    padding-bottom: 100px;
+    section {
+        .flexContacto {
+            @include flex(flex, row wrap, center, center);
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .contacto {
+                margin-bottom: 20px;
+                font-family: $font;
+                font-size: 18px;
+                font-weight: 800;
+                text-align: center;
+            }
+        }
+    }
+    form {
+        background-color: map-get($fondos, celesteClaro);
+        @include medidas(40%, 750px);
+        padding: 12px 20px;
+        border-radius: 10px;
+        margin: auto;
+        @include flexAbreviado (flex, column, center, center);
+        font-family: $font;
+        font-weight: bold;
+        border-right: 7px solid rgba(20, 108, 148, 0.8);
+        border-bottom: 7px solid rgba(20, 108, 148, 0.8);
+        div {
+            width: 400px;
+            @include flexAbreviado (flex, row, center, baseline);
+            color: map-get($colorFuente, turquesa);
+            font-size: 18px;
+            input[type=text],
+            input[type=email] {
+                    width: 70%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    border: 1px solid rgb(25, 167, 206);
+                    border-radius: 10px;
+                    margin-left: 10px;
+            };
+            textarea {
+                width: 80%;
+                padding: 40px 20px;
+                margin: 8px 10px;
+                border: 1px solid rgb(25, 167, 206);
+                border-radius: 10px;
+            };
+            ::placeholder {
+                font-family: $font;
+                color: map-get($colorFuente , celesteOscuro);
+                font-size: 16px;
+            }
+        }
+        .boton {
+            button {
+                width: 50%;
+                background-color: map-get($fondos, casiBlanco);
+                padding: 6px 8px;
+                margin-top: 20px;
+                border: $bordeBoton;
+                border-radius: 7px;
+                font-family: $font;
+                font-size: 20px;
+                color: map-get($colorFuente, turquesa);
+                &:hover {
+                    box-shadow: $sombreadoHover;
+                }
+            }
+        }
+    }
+}
