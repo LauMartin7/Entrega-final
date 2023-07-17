@@ -4,6 +4,7 @@
         background-color: map-get($fondos, celesteOscuro);
         @include medidas($full-width, 150px);
         padding-top: 2%;
+        border-top: $bordeHeader;
         .grillaFooter {
             @include flex(flex, row wrap, space-around, center);
             text-align: center;
@@ -13,8 +14,9 @@
                 font-weight: bold;
             };
             .descargarCV {
-                background-color: map-get($fondos, casiBlanco);
+                background: linear-gradient(to top, map-get($fondos, celesteClaro), map-get($fondos, casiBlanco));
                 padding: 6px 8px;
+                transition: padding .5s;
                 border: $bordeBoton;
                 border-radius: 7px;
                 font-family: $font;
@@ -23,9 +25,19 @@
                 text-decoration: none;
                 &:hover {
                     box-shadow: $sombreadoHover;
+                    padding: 10px 10px;
                 }
             };
             .linkedin {
+                img{
+                    width: 120px;
+                    height: 68px;
+                    transition: width .5s, height .5s;
+                    &:hover{
+                        width: 140px;
+                        height: 80px;
+                    }
+                };
                 &:hover{
                     filter: drop-shadow($sombreadoGral);
                 }

@@ -1,11 +1,52 @@
 /*SOBRE MI*/
 
+.mainSobreMi {
+    margin-top: 100px;
+}
+@keyframes slide-in-top {
+    from {
+        margin-top: -200px;
+        height: 900px;
+    }
+    to {
+        margin-top: 0;
+        height: 720px;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        margin-top: 95%;
+        height: 1000px;
+    }
+    to {
+        margin-top: 10px;
+        height: 720px;
+    }
+}
+
 /*Seccion SobreMi de SobreMi */
 section {
     .sobreMiS {
-        @include flex(flex, row wrap, space-evenly, center);
-        margin-left: 12px;
+        @include flex(flex, row wrap, space-around, start);
         margin-bottom: 100px;
+        .codigo2 {
+            z-index: -1;
+            animation-name: slide-in-top;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            @include medidas(214px, 720px);
+            position: relative;
+            top: -100px;
+        };
+        .codigo1 {
+            z-index: -1;
+            animation-name: slide-in;
+            animation-duration: 1.5s;
+            animation-iteration-count: 1;
+            position: relative;
+            top: -100px;
+        };
         .sobreMiTextoS {
             height: 540px;
             @extend %divs;
@@ -21,21 +62,18 @@ section {
         .retrato {
             img {
                 @extend %divs;
-                width: $full-width;
+                @include medidas(391px, 583px);
+                margin-left: 50px;
             }
         }
     }
 }
 /*Seccion Mi Carrera de SobreMi*/
 section {
-    &.codigoS{
-        background-image: url(../img/binario2.png);
-        @include imagenFondo(auto, no-repeat, bottom left);
-    };
     .miCarrera {
         margin-top: 100px;
         @include flex(flex, row wrap, space-evenly, center);
-        margin-left: 50px;
+        margin-left: 90px;
         margin-bottom: 150px;
         .miCarreraTexto {
             height: 570px;

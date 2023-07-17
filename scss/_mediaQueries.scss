@@ -42,11 +42,43 @@
         .presentacion {
             margin-top: 0;
             margin-left: 0;
-            align-items: center;
+            @include flex(flex, row wrap, center, center);
             .textoPresentacion {
                 margin-top: 20%;
-                @include medidas(80%, 45%);
-                padding: 5%;
+                @include medidas(85%, 45%);
+                perspective: none;
+                transform: none;
+                transition: none;
+                span {
+                    position: static;
+                    display: block;
+                    margin-left: 0;
+                    transform: none;
+                    transition: none;
+                    &:hover span:nth-child(2) {
+                        transform: none;
+                        background-color: map-get($fondos, celesteClaro);
+                        transition: none;
+                        h2, p {
+                            color: map-get($colorFuente, turquesa);
+                        }
+                    };
+                    img{
+                        display:none;
+                    };
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                    &:nth-child(2) {
+                        transform: none;
+                        width: 100%;
+                        height: 220px;
+                        h2 {
+                            width: 50px;
+                            display: block;
+                        }
+                    }
+                }
             }
             div {
                 img {

@@ -1,33 +1,141 @@
 /*INDEX*/
 
-.mainIndex {
-    padding-top: 100px;
-    background-image: url(../img/binario.png);
-    @include imagenFondo(auto, no-repeat, top left);
+
+
+@keyframes slide-in {
+    from {
+        margin-top: 95%;
+        height: 1000px;
+    }
+    to {
+        margin-top: 10px;
+        height: 720px;
+    }
+}
+
+@keyframes slide-in-top {
+    from {
+        margin-top: -200px;
+        height: 900px;
+    }
+    to {
+        margin-top: 0;
+        height: 720px;
+    }
 }
 
 /*Sección presentación de Inicio*/
 section {
     &.codigoI{
+        padding-top: 100px;
         background-image: url(../img/binario3.png);
         @include imagenFondo(auto, no-repeat, right);
     };
     .presentacion {
-        background-image: url(../img/binario3.png);
-        @include imagenFondo(contain, no-repeat, center);
-        @include flex(flex, row wrap, space-evenly, center);
-        img {
+        @include flex(flex, row wrap, space-around, start);
+        img:not(.codigo1, .codigo2) {
             width: $full-width;
             @extend %divs;
         };
+        .codigo1 {
+            z-index: -1;
+            animation-name: slide-in;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            position: relative;
+            top: -100px;
+        };
+        .codigo2 {
+            z-index: -1;
+            animation-name: slide-in-top;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+        };
         .textoPresentacion {
-            @include medidas (30%, 20%);
-            @extend %divs;
-            background-color: map-get($fondos, celesteClaro);
-            padding: 50px;
+            cursor: pointer;
+            transition: all .6s ease;
+            line-height: 42px;
+            perspective: 400px;
+            span {
+                background-color: map-get($fondos, celesteClaro);
+                @extend %divs;
+                position: absolute;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-transition: all .6s;
+                transition: all 1s;
+                &:nth-child(1) {
+                    margin-left: 70px;
+                    text-align: center;
+                    padding-top: 30px;
+                    @include medidas(350px, 100px);
+                    -webkit-transform: rotateX(90deg);
+                    -moz-transform: rotateX(90deg);
+                    transform: rotateX(90deg);
+                    -webkit-transform-origin: 50% 50% -20px;
+                    -moz-transform-origin: 50% 50% -20px;
+                    transform-origin: 50% 50% -20px;
+                    background-color: transparent;
+                    border-right: transparent;
+                    border-bottom: transparent;
+                    box-shadow: none;
+                    h2 {
+                        color: transparent;
+                    };
+                };
+                &:nth-child(2) {
+                    @include medidas(450px, 250px);
+                    padding: 50px;
+                    -webkit-transform: rotateX(0deg);
+                    -moz-transform: rotateX(0deg);
+                    transform: rotateX(0deg);
+                    -webkit-transform-origin: 50% 50% -20px;
+                    -moz-transform-origin: 50% 50% -20px;
+                    transform-origin: 50% 50% -20px;
+                    h2 {
+                        width: 115px;
+                        display: inline;
+                    }
+                    
+                };
+                img {
+                    width: 70px;
+                    border: none;
+                    box-shadow: 0 0;
+                }
+            };
+            &:hover span:nth-child(1) {
+                -webkit-transform: rotateX(0deg);
+                -moz-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+                @extend %divs;
+                background-color: map-get($fondos, celesteClaro);
+                h2 {
+                    color: map-get($colorFuente, turquesa);
+                };
+            };
+            &:hover span:nth-child(2) {
+                background-color: transparent;
+                border-right: transparent;
+                border-bottom: transparent;
+                -webkit-transform: rotateX(-90deg);
+                -moz-transform: rotateX(-90deg);
+                transform: rotateX(-90deg);
+                box-shadow: none;
+                h2 {
+                    color: transparent;
+                };
+                p {
+                    color: transparent;
+                };
+                img {
+                    display: none;
+                }
+            };
             p {
-                margin-top: 20px;
+                margin-top: 5px;
             }
-        }
+        };
     }
 }

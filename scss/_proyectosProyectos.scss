@@ -37,7 +37,7 @@
                 box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
                 padding-bottom: 20px;
                 .irAlSitio {
-                    background-color: map-get($fondos, casiBlanco);
+                    background: linear-gradient(to top, map-get($fondos, celesteClaro), map-get($fondos, casiBlanco));
                     padding: 6px 8px;
                     border: $bordeBoton;
                     border-radius: 7px;

@@ -19,7 +19,7 @@
         }
     }
     form {
-        background-color: map-get($fondos, celesteClaro);
+        background: linear-gradient(to right, map-get($fondos, celesteClaro), map-get($fondos, celesteOscuro));
         @include medidas(40%, 750px);
         padding: 12px 20px;
         border-radius: 10px;
@@ -59,7 +59,7 @@
         .boton {
             button {
                 width: 50%;
-                background-color: map-get($fondos, casiBlanco);
+                background: linear-gradient(to top, map-get($fondos, celesteClaro), map-get($fondos, casiBlanco));
                 padding: 6px 8px;
                 margin-top: 20px;
                 border: $bordeBoton;
