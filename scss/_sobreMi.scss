@@ -1,8 +1,9 @@
 /*SOBRE MI*/
 
 .mainSobreMi {
-    margin-top: 100px;
+    padding-top: 100px;
 }
+
 @keyframes slide-in-top {
     from {
         margin-top: -200px;
@@ -74,7 +75,7 @@ section {
         margin-top: 100px;
         @include flex(flex, row wrap, space-evenly, center);
         margin-left: 90px;
-        margin-bottom: 150px;
+        padding-bottom: 150px;
         .miCarreraTexto {
             height: 570px;
             padding: 50px;

@@ -1,7 +1,5 @@
 /*INDEX*/
 
-
-
 @keyframes slide-in {
     from {
         margin-top: 95%;
@@ -27,7 +25,6 @@
 /*Sección presentación de Inicio*/
 section {
     &.codigoI{
-        padding-top: 100px;
         background-image: url(../img/binario3.png);
         @include imagenFondo(auto, no-repeat, right);
     };

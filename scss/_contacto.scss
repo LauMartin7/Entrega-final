@@ -1,5 +1,16 @@
 /*CONTACTO*/
 
+@keyframes appear-rigth {
+    from {
+        margin-left: 600px;
+        width: 1400px;
+    }
+    to {
+        margin-right: 30%;
+        width: 1320px;
+    }
+}
+
 #contacto {
     background-image: url(../img/correo.png);
     @include imagenFondo(cover, no-repeat, center);
@@ -9,6 +20,9 @@
             @include flex(flex, row wrap, center, center);
             padding-top: 50px;
             padding-bottom: 50px;
+            animation-name: appear-rigth;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
             .contacto {
                 margin-bottom: 20px;
                 font-family: $font;

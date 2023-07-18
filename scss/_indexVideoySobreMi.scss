@@ -2,8 +2,7 @@
 /*Sección video de Inicio*/
 section {
     #video {
-        width: $full-width;
-        height: 400px;
+        @include medidas($full-width, 400px);
         margin-left: 162px;
         object-fit: cover;
         @extend %divs;

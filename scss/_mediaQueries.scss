@@ -32,33 +32,37 @@
         }
     }
     
-
-
     /*Main de la Pagina de Inicio*/
-    
     
     /*Sección Presentación de Inicio*/
     section {
+        &.codigoI{
+            padding-top: 0;
+            padding-left: 12px;
+            padding-right: 12px;
+            background-image: none;
+        };
         .presentacion {
             margin-top: 0;
             margin-left: 0;
             @include flex(flex, row wrap, center, center);
+            div {
+                width: 84%;
+                img {
+                    width:100%
+                }
+            };
+            .codigo2, .codigo1 {
+                display: none;
+            };
             .textoPresentacion {
-                margin-top: 20%;
-                @include medidas(85%, 45%);
-                perspective: none;
-                transform: none;
-                transition: none;
+                @include medidas(84%, 45%);
+                @include flex(flex, column, center, center);
                 span {
-                    position: static;
-                    display: block;
-                    margin-left: 0;
-                    transform: none;
-                    transition: none;
+                    @include medidas(84%, 45%);
+                    position: relative;
                     &:hover span:nth-child(2) {
-                        transform: none;
                         background-color: map-get($fondos, celesteClaro);
-                        transition: none;
                         h2, p {
                             color: map-get($colorFuente, turquesa);
                         }
@@ -67,27 +71,21 @@
                         display:none;
                     };
                     &:nth-child(1) {
-                        display: none;
+                        margin-left: 0;
+                        @include medidas($full-width, auto);
                     }
                     &:nth-child(2) {
-                        transform: none;
-                        width: 100%;
-                        height: 220px;
+                        @include medidas($full-width, 220px);
+                        padding: 10%;
                         h2 {
                             width: 50px;
-                            display: block;
                         }
                     }
                 }
             }
-            div {
-                img {
-                    width: 84%;
-                    margin-left: 8%;
-                }
-            }
         }
     }
+
     /*Sección Video de Inicio*/
     section {
         #video {
@@ -99,9 +97,11 @@
     /*Sección SobreMi de Inicio*/
     section {
         .sobreMiI {
+            padding-bottom: 15%;
+            padding-top: 0;
             margin-top: 0;
-            margin-bottom: 15%;
             margin-left: 0;
+            margin-bottom: 0;
             align-items: center;
             .sobreMiTextoI {
                 @include medidas(80%, 50%);
@@ -121,69 +121,79 @@
                     width: $full-width;
                 }
             }
-        }        
+        };
+        padding-top: 0;
     }
     
     
     /*Main de la Pagina Sobre Mi*/
 
+    .mainSobreMi {
+        background-image: url(../img/binario.png);
+        @include imagenFondo(auto, repeat, top);
+        /*Seccion Sobre Mi*/
+        section {
+            .sobreMiS {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                align-items: center;
+                .codigo2, .codigo1 {
+                    display: none;
+                };
+                .sobreMiTextoS {
+                    @include medidas(80%, 60%);
+                    padding: 5%;
+                    margin-left: 0;
+                    margin-top: 0;
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+                .retrato {
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 80%;
+                    img {
+                        margin-top: 20%;
+                        width: $full-width;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        /*Seccion Mi Carrera*/
+        section {
+            .miCarrera {
+                margin-top: 0;
+                margin-left: 0;
+                align-items: center;
+                padding-bottom: 15%;
+                padding-top: 15%;
+                .miCarreraTexto {
+                    @include medidas(80%, fit-content);
+                    padding: 5%;
+                    margin-left: 0;
+                    margin-top: 0;
+                    padding-bottom: 0;
+                    p {
+                        margin-bottom: 0;
+                        padding-bottom: 5vh;
+                    }
+                }
+                .retrato {
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 80%;
+                    img {
+                        margin-top: 20%;
+                        width: $full-width;
+                    }
+                }
+            }
+        }
+    };
     
-    /*Seccion Sobre Mi*/
-    section {
-        .sobreMiS {
-            margin-top: 0;
-            margin-bottom: 15%;
-            margin-left: 0;
-            align-items: center;
-            .sobreMiTextoS {
-                @include medidas(80%, 60%);
-                padding: 5%;
-                margin-left: 0;
-                margin-top: 0;
-                p {
-                    margin-bottom: 0;
-                }
-            }
-            .retrato {
-                padding-left: 0;
-                padding-right: 0;
-                width: 80%;
-                img {
-                    margin-top: 20%;
-                    width: $full-width;
-                }
-            }
-        }
-    }
-    /*Seccion Mi Carrera*/
-    section {
-        .miCarrera {
-            margin-top: 0;
-            margin-bottom: 15%;
-            margin-left: 0;
-            align-items: center;
-            .miCarreraTexto {
-                @include medidas(80%, fit-content);
-                padding: 5%;
-                margin-left: 0;
-                margin-top: 0;
-                padding-bottom: 0;
-                p {
-                    margin-bottom: 0;
-                    padding-bottom: 5vh;
-                }
-            }
-            .retrato {
-                padding-left: 0;
-                padding-right: 0;
-                width: 80%;
-                img {
-                    margin-top: 20%;
-                    width: $full-width;
-                }
-            }
-        }
-    }
 
     /*Main de la Pagina proyectos*/
     /*Seccion Intro de proyectos*/
@@ -209,7 +219,7 @@
     }
     /*Seccion Intro de proyectos*/
     .seccionProyectos {
-        @include medidas($full-width, 700vh);
+        @include medidas($full-width, 1030vh);
         .grillaProyectos {
             grid-template-columns: 1fr;
             grid-template-rows: 13% 22% 14% 18% 10% 8%;
@@ -239,38 +249,53 @@
     /*Main de la Pagina Desarrollo*/
 
     /*Sección con intro de la Pagina*/
-    section {
-        .desarrollo {
-            height: fit-content;
-            h2 {
-                text-align: center;
-            }
-        }
-    }
-    /*Sección de Lenguajes*/
-    section {
-        .lenguajes {
-            margin-left: 0;
-            margin-top: 7%;
-            div {
-                img {
-                    width: 85%;
-                    margin-left: 8%;
+
+    #desarrollo {
+        @include imagenFondo(auto, repeat, top);
+        section {
+            .desarrollo {
+                height: fit-content;
+                h2 {
+                    text-align: center;
                 }
             }
-            .lenguajesTexto {
-                padding: 5%;
-                width: 88%;
-                height: fit-content;
+        }
+        /*Sección de Lenguajes*/
+        section {
+            .lenguajes {
+                margin-left: 0;
                 margin-top: 7%;
+                div {
+                    img {
+                        width: 85%;
+                        margin-left: 8%;
+                    }
+                }
+                .lenguajesTexto {
+                    padding: 5%;
+                    width: 88%;
+                    height: fit-content;
+                    margin-top: 7%;
+                }
             }
         }
     }
+    
 
 
     /*Main de la Pagina Contacto*/
 
 
+    @keyframes appear-rigth {
+        from {
+            margin-left: 100%;
+            width: 600px;
+        }
+        to {
+            margin-left: 0;
+            width: 550px;
+        }
+    }
     /*Formulario*/
     #contacto {
         form {
