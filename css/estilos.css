@@ -132,7 +132,7 @@ header.headerDesarrollo {
 }
 /*Sección presentación de Inicio*/
 section.codigoI {
-  background-image: url(../img/binario3.png);
+  background-image: url(../img/binario3.webp);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: right;
@@ -395,7 +395,7 @@ section .miCarrera .retrato img {
 .intro {
   width: 100%;
   padding: 100px;
-  background-image: url(../img/chicaCodigo.jpg);
+  background-image: url(../img/chicaCodigo.webp);
   background-size: contain;
   background-repeat: repeat;
   background-position: center;
@@ -493,7 +493,7 @@ section .miCarrera .retrato img {
 #desarrollo {
   padding-bottom: 100px;
   padding-top: 100px;
-  background-image: url(../img/codigo.jpg);
+  background-image: url(../img/codigo.webp);
   background-size: contain;
   background-repeat: repeat;
   background-position: center;
@@ -556,7 +556,7 @@ section .lenguajes .lenguajesTexto h3 {
   }
 }
 #contacto {
-  background-image: url(../img/correo.png);
+  background-image: url(../img/correo.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -811,7 +811,7 @@ footer .grillaFooter .linkedin:hover {
   }
   /*Main de la Pagina Sobre Mi*/
   .mainSobreMi {
-    background-image: url(../img/binario.png);
+    background-image: url(../img/binario.webp);
     background-size: auto;
     background-repeat: repeat;
     background-position: top;

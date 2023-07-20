@@ -4,7 +4,7 @@
 .intro {
     width: $full-width;
     padding: 100px;
-    background-image: url(../img/chicaCodigo.jpg);
+    background-image: url(../img/chicaCodigo.webp);
     @include imagenFondo(contain, repeat, center);
     .introProyectos {
         @include flex(flex, row wrap, center, center);
