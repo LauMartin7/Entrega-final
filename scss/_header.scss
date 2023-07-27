@@ -5,61 +5,71 @@ header {
     width: $full-width;
     margin-bottom: 100px;
     border-bottom: $bordeHeader;
-    h1 {
-        font-family: $font;
-        text-shadow: 3px 7px 2px rgba(27, 29, 29, 0.243);
-        font-size: 40px;
-        text-align: center;
-        color: map-get($colorFuente, celesteClaro);
-        letter-spacing: 2px;
-    };
-    div {
-        div{
-            @include flexAbreviado (flex, row, flex-start, center);
-        }
-    };
-    &.headerIndex {
-        margin-bottom: 0;
-    }
-
-    nav{
-    &.navbar {
-        background-color: map-get($fondos, turquesa);
-        padding-bottom: 0;
-    }
-
-    &.navbar-light {
-        @extend %pestaniasNav;
+    .flexIndex {
+        @include flexAbreviado (flex, row, space-around, center);
+        .divH1{
+            width: 30%;
+            h1 {
+                font-family: $font;
+                text-shadow: 3px 7px 2px rgba(27, 29, 29, 0.243);
+                font-size: 40px;
+                color: map-get($colorFuente, celesteClaro);
+                letter-spacing: 2px;
+            };
+        };
+        .divLogo {
+            width: 10%;
+        };
         div {
-            div{
-                ul {
-                    list-style-type: none;
-                    margin-bottom: 0;
-                &.navbar-nav{
+            nav{
+                &.navbar {
+                    background-color: map-get($fondos, turquesa);
+                    padding-bottom: 0;
+                    height: 100%;
+                    padding-top: 0;
+                }
+                &.navbar-light {
                     @extend %pestaniasNav;
-                    li {
-                        width: 220px;
-                        @include flex(inline-flex, row wrap, center, center);
-                        a {
-                        &.nav-link {
+                    div{
+                        @include medidas($full-width, 100%);
+                        ul {
+                            list-style-type: none;
+                            margin-bottom: 0;
+                            @include medidas($full-width, 100%);
+                        &.navbar-nav{
                             @extend %pestaniasNav;
+                            li {
+                                @include flexAbreviado (inline-flex, row wrap, center, center);
+                                align-self: center;
+                                width: 150px;
+                                a {
+                                &.nav-link {
+                                    @extend %pestaniasNav;
+                                    @include medidas($full-width, 100%);
+                                    text-align: center;
+                                    align-self: center;
+                                }
+                                &:hover {
+                                    @include medidas($full-width, 100%);
+                                    background-color: map-get($fondos, gris);
+                                    color: map-get($colorFuente, celesteClaro);
+                                }
+                                }
+                            }
                         }
-                        &:hover {
-                            width: $full-width;
-                            background-color: map-get($fondos, gris);
-                            text-align: center;
-                            color: map-get($colorFuente, celesteClaro);
                         }
-                        }
+                    };
+                    .navbar-toggler {
+                        background-color: map-get($fondos, casiBlanco);
                     }
                 }
-                }
             };
-            .navbar-toggler {
-                background-color: map-get($fondos, casiBlanco);
-            }
-        }
-    }
+            
+        };
+    };
+
+    &.headerIndex {
+        margin-bottom: 0;
     }
 
     &.headerDesarrollo {

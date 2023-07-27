@@ -5,18 +5,45 @@
     /*Header*/
 
     header {
+        padding-top: 5vh;
         margin-bottom: 20%;
-        h1 {
-            font-size: 30px;
-        }
-        nav {
-            .navbar-toggler {
-                margin-bottom: 10px;
-            }
-            ul {
-                li {
-                    a {
-                        font-size: 18px;
+        .flexIndex {
+            @include flexAbreviado (flex, row, space-between, center);
+            .divLogo {
+                width: 22%;
+                padding: 0;
+                img {
+                    width: 125%;
+                }
+            };
+            .divH1 {
+                width: 30%;
+                padding: 0;
+                h1 {
+                    font-size: 23px;
+                    text-align: center;
+                }
+            };
+            div {
+                nav {
+                    &.navbar-light {
+                        .navbar-toggler {
+                            margin-bottom: 5px;
+                            margin-left: 10vw;
+                        };
+                        div {
+                            ul {
+                            &.navbar-nav{
+                                li {
+                                    a {
+                                    &.nav-link {    
+                                        font-size: 16px;
+                                    }
+                                    }
+                                }
+                            }
+                            }
+                        }
                     }
                 }
             }
@@ -88,12 +115,11 @@
 
     /*Sección Video de Inicio*/
     section {
-        #video {
-            height: 80%;
-            margin-left: 12%; 
-            margin-top: 20%;
+        &.seccionVideo{
+            display: none;
         }
     }
+
     /*Sección SobreMi de Inicio*/
     section {
         .sobreMiI {
