@@ -29,7 +29,7 @@ section {
         @include imagenFondo(auto, no-repeat, right);
     };
     .presentacion {
-        @include flex(flex, row wrap, space-around, start);
+        @include flex(flex, row wrap, flex-start, start);
         img:not(.codigo1, .codigo2) {
             width: $full-width;
             @extend %divs;
@@ -42,6 +42,12 @@ section {
             position: relative;
             top: -100px;
         };
+        .familia {
+            img {
+                width: $full-width;
+                @extend %divs;
+            }
+        };
         .codigo2 {
             z-index: -1;
             animation-name: slide-in-top;
@@ -49,90 +55,32 @@ section {
             animation-iteration-count: 1;
         };
         .textoPresentacion {
-            cursor: pointer;
-            transition: all .6s ease;
-            line-height: 42px;
-            perspective: 400px;
-            span {
+            @include medidas(450px, 600px);
+            padding-right: 12px;
+            padding-left: 12px;
+            div:not(.carousel-inner) {
                 background-color: map-get($fondos, celesteClaro);
                 @extend %divs;
-                position: absolute;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-                -webkit-transition: all .6s;
-                transition: all 1s;
-                &:nth-child(1) {
-                    margin-left: 70px;
-                    text-align: center;
-                    padding-top: 30px;
-                    @include medidas(350px, 100px);
-                    -webkit-transform: rotateX(90deg);
-                    -moz-transform: rotateX(90deg);
-                    transform: rotateX(90deg);
-                    -webkit-transform-origin: 50% 50% -20px;
-                    -moz-transform-origin: 50% 50% -20px;
-                    transform-origin: 50% 50% -20px;
-                    background-color: transparent;
-                    border-right: transparent;
-                    border-bottom: transparent;
-                    box-shadow: none;
-                    h2 {
-                        color: transparent;
-                    };
-                };
-                &:nth-child(2) {
-                    @include medidas(450px, 250px);
-                    padding: 50px;
-                    -webkit-transform: rotateX(0deg);
-                    -moz-transform: rotateX(0deg);
-                    transform: rotateX(0deg);
-                    -webkit-transform-origin: 50% 50% -20px;
-                    -moz-transform-origin: 50% 50% -20px;
-                    transform-origin: 50% 50% -20px;
-                    h2 {
-                        width: 115px;
-                        display: inline;
-                    }
-                    
-                };
+                padding: 50px;
+                line-height: 42px;
                 img {
                     width: 70px;
                     border: none;
                     box-shadow: 0 0;
-                }
-            };
-            &:hover span:nth-child(1) {
-                -webkit-transform: rotateX(0deg);
-                -moz-transform: rotateX(0deg);
-                transform: rotateX(0deg);
-                @extend %divs;
-                background-color: map-get($fondos, celesteClaro);
-                h2 {
-                    color: map-get($colorFuente, turquesa);
                 };
-            };
-            &:hover span:nth-child(2) {
-                background-color: transparent;
-                border-right: transparent;
-                border-bottom: transparent;
-                -webkit-transform: rotateX(-90deg);
-                -moz-transform: rotateX(-90deg);
-                transform: rotateX(-90deg);
-                box-shadow: none;
-                h2 {
-                    color: transparent;
+                &.trabajemos {
+                    @include medidas(450px, 250px);
+                    @include flex(flex, row wrap, center, space-between);
+                    img {
+                        @include medidas(90px, 80px);
+                    };
                 };
-                p {
-                    color: transparent;
+                &.hola {
+                    @include medidas(450px, 250px);
+                    @include flex(flex, row wrap, flex-start, center);
                 };
-                img {
-                    display: none;
-                }
+                
             };
-            p {
-                margin-top: 5px;
-            }
         };
     }
 }

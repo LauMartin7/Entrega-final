@@ -15,7 +15,7 @@ header .flexIndex div nav.navbar-light div ul.navbar-nav li a.nav-link, header .
 }
 
 /*Estilo comun en divs e imagenes*/
-section .lenguajes .lenguajesTexto, #desarrollo section .flexDesarrollo .desarrollo, section .miCarrera .retrato img, section .miCarrera .miCarreraTexto, section .sobreMiS .retrato img, section .sobreMiS .sobreMiTextoS, section .sobreMiI .retrato img, section .sobreMiI .sobreMiTextoI, section .divVideo #video, section .presentacion .textoPresentacion:hover span:nth-child(1), section .presentacion .textoPresentacion span, section .presentacion img:not(.codigo1, .codigo2) {
+section .lenguajes .lenguajesTexto, #desarrollo section .flexDesarrollo .desarrollo, section .miCarrera .retrato img, section .miCarrera .miCarreraTexto, section .sobreMiS .retrato img, section .sobreMiS .sobreMiTextoS, section .sobreMiI .retrato img, section .sobreMiI .sobreMiTextoI, section .divVideo #video, section .presentacion .textoPresentacion div:not(.carousel-inner), section .presentacion .familia img, section .presentacion img:not(.codigo1, .codigo2) {
   border-radius: 10px;
   border-right: 5px solid rgb(25, 167, 206);
   border-bottom: 5px solid rgb(25, 167, 206);
@@ -160,7 +160,7 @@ section.codigoI {
 section .presentacion {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: start;
 }
 section .presentacion img:not(.codigo1, .codigo2) {
@@ -174,6 +174,9 @@ section .presentacion .codigo1 {
   position: relative;
   top: -100px;
 }
+section .presentacion .familia img {
+  width: 100%;
+}
 section .presentacion .codigo2 {
   z-index: -1;
   animation-name: slide-in-top;
@@ -181,89 +184,40 @@ section .presentacion .codigo2 {
   animation-iteration-count: 1;
 }
 section .presentacion .textoPresentacion {
-  cursor: pointer;
-  transition: all 0.6s ease;
-  line-height: 42px;
-  perspective: 400px;
-}
-section .presentacion .textoPresentacion span {
-  background-color: rgb(175, 211, 226);
-  position: absolute;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.6s;
-  transition: all 1s;
-}
-section .presentacion .textoPresentacion span:nth-child(1) {
-  margin-left: 70px;
-  text-align: center;
-  padding-top: 30px;
-  width: 350px;
-  height: 100px;
-  -webkit-transform: rotateX(90deg);
-  -moz-transform: rotateX(90deg);
-  transform: rotateX(90deg);
-  -webkit-transform-origin: 50% 50% -20px;
-  -moz-transform-origin: 50% 50% -20px;
-  transform-origin: 50% 50% -20px;
-  background-color: transparent;
-  border-right: transparent;
-  border-bottom: transparent;
-  box-shadow: none;
-}
-section .presentacion .textoPresentacion span:nth-child(1) h2 {
-  color: transparent;
-}
-section .presentacion .textoPresentacion span:nth-child(2) {
   width: 450px;
-  height: 250px;
+  height: 600px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+section .presentacion .textoPresentacion div:not(.carousel-inner) {
+  background-color: rgb(175, 211, 226);
   padding: 50px;
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-  -webkit-transform-origin: 50% 50% -20px;
-  -moz-transform-origin: 50% 50% -20px;
-  transform-origin: 50% 50% -20px;
+  line-height: 42px;
 }
-section .presentacion .textoPresentacion span:nth-child(2) h2 {
-  width: 115px;
-  display: inline;
-}
-section .presentacion .textoPresentacion span img {
+section .presentacion .textoPresentacion div:not(.carousel-inner) img {
   width: 70px;
   border: none;
   box-shadow: 0 0;
 }
-section .presentacion .textoPresentacion:hover span:nth-child(1) {
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-  background-color: rgb(175, 211, 226);
+section .presentacion .textoPresentacion div:not(.carousel-inner).trabajemos {
+  width: 450px;
+  height: 250px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: space-between;
 }
-section .presentacion .textoPresentacion:hover span:nth-child(1) h2 {
-  color: rgb(20, 108, 148);
+section .presentacion .textoPresentacion div:not(.carousel-inner).trabajemos img {
+  width: 90px;
+  height: 80px;
 }
-section .presentacion .textoPresentacion:hover span:nth-child(2) {
-  background-color: transparent;
-  border-right: transparent;
-  border-bottom: transparent;
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  box-shadow: none;
-}
-section .presentacion .textoPresentacion:hover span:nth-child(2) h2 {
-  color: transparent;
-}
-section .presentacion .textoPresentacion:hover span:nth-child(2) p {
-  color: transparent;
-}
-section .presentacion .textoPresentacion:hover span:nth-child(2) img {
-  display: none;
-}
-section .presentacion .textoPresentacion p {
-  margin-top: 5px;
+section .presentacion .textoPresentacion div:not(.carousel-inner).hola {
+  width: 450px;
+  height: 250px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /*INDEX*/
