@@ -73,8 +73,10 @@
             margin-top: 0;
             margin-left: 0;
             @include flex(flex, row wrap, center, center);
-            div {
-                width: 84%;
+            .familia {
+                width: 80%;
+                padding-left: 0;
+                padding-right: 0;
                 img {
                     width:100%
                 }
@@ -83,35 +85,24 @@
                 display: none;
             };
             .textoPresentacion {
-                @include medidas(84%, 45%);
+                padding: 2%;
+                margin-top: 20%;
+                @include medidas($full-width, 45%);
                 @include flex(flex, column, center, center);
-                span {
-                    @include medidas(84%, 45%);
-                    position: relative;
-                    &:hover span:nth-child(2) {
-                        background-color: map-get($fondos, celesteClaro);
-                        h2, p {
-                            color: map-get($colorFuente, turquesa);
-                        }
-                    };
-                    img{
-                        display:none;
-                    };
-                    &:nth-child(1) {
-                        margin-left: 0;
-                        @include medidas($full-width, auto);
-                    }
-                    &:nth-child(2) {
-                        @include medidas($full-width, 220px);
-                        padding: 10%;
-                        h2 {
-                            width: 50px;
-                        }
+                div {
+                    @include medidas(84%, 40%);
+                    div:not(.carousel-inner) {
+                        &.trabajemos, &.hola {
+                            padding: 5%;
+                            line-height: inherit;
+                            height: 200px;
+                        };
                     }
                 }
             }
         }
     }
+    
 
     /*Sección Video de Inicio*/
     section {
@@ -123,7 +114,7 @@
     /*Sección SobreMi de Inicio*/
     section {
         .sobreMiI {
-            padding-bottom: 15%;
+            padding-bottom: 20%;
             padding-top: 0;
             margin-top: 0;
             margin-left: 0;
@@ -142,8 +133,8 @@
                 padding-left: 0;
                 padding-right: 0;
                 width: 80%;
+                margin-top: 20%;
                 img {
-                    margin-top: 20%;
                     width: $full-width;
                 }
             }
@@ -180,9 +171,9 @@
                     padding-left: 0;
                     padding-right: 0;
                     width: 80%;
+                    margin-top: 20%;
                     img {
-                        margin-top: 20%;
-                        width: $full-width;
+                        @include medidas($full-width, 368px);
                         margin-left: 0;
                     }
                 }
@@ -194,8 +185,8 @@
                 margin-top: 0;
                 margin-left: 0;
                 align-items: center;
-                padding-bottom: 15%;
-                padding-top: 15%;
+                padding-bottom: 20%;
+                padding-top: 20%;
                 .miCarreraTexto {
                     @include medidas(80%, fit-content);
                     padding: 5%;
@@ -211,8 +202,8 @@
                     padding-left: 0;
                     padding-right: 0;
                     width: 80%;
+                    margin-top: 20%;
                     img {
-                        margin-top: 20%;
                         width: $full-width;
                     }
                 }
