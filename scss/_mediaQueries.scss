@@ -236,15 +236,13 @@
     }
     /*Seccion Intro de proyectos*/
     .seccionProyectos {
-        @include medidas($full-width, 1030vh);
+        @include medidas($full-width, 100%);
         .grillaProyectos {
             grid-template-columns: 1fr;
-            grid-template-rows: 13% 22% 14% 18% 10% 8%;
-            row-gap: 6%;
+            row-gap: 30vh;
             width: $full-width;
             margin-top: 20vh;
-            margin-left: 0;
-            margin-bottom: 0;
+            margin-bottom: 30vh;
             .proyectos {
                 width: 80%;
                 justify-self: center;

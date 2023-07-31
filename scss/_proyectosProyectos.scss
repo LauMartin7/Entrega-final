@@ -6,8 +6,8 @@
     width: $full-width;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 150px;
-    margin-bottom: 150px;
-    margin-top: 100px;
+    justify-items: center;
+    margin: 100px 0 150px;
     .proyectos {
         background-color: map-get($fondos, casiBlanco);
         @include medidas(370px, 300px);
