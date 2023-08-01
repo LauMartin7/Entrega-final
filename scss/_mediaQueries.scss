@@ -130,6 +130,7 @@
                 }
             }
             .retrato {
+                margin-left: 0;
                 padding-left: 0;
                 padding-right: 0;
                 width: 80%;
@@ -148,6 +149,7 @@
     .mainSobreMi {
         background-image: url(../img/binario.webp);
         @include imagenFondo(auto, repeat, top);
+        padding-top: 50px;
         /*Seccion Sobre Mi*/
         section {
             .sobreMiS {
@@ -167,13 +169,13 @@
                         margin-bottom: 0;
                     }
                 }
-                .retrato {
+                .retratoSobreMi {
                     padding-left: 0;
                     padding-right: 0;
                     width: 80%;
                     margin-top: 20%;
                     img {
-                        @include medidas($full-width, 368px);
+                        width: $full-width;
                         margin-left: 0;
                     }
                 }
@@ -198,7 +200,7 @@
                         padding-bottom: 5vh;
                     }
                 }
-                .retrato {
+                #cerebro {
                     padding-left: 0;
                     padding-right: 0;
                     width: 80%;
@@ -214,12 +216,13 @@
 
     /*Main de la Pagina proyectos*/
     /*Seccion Intro de proyectos*/
+
     .intro {
-        padding: 5%;
+        padding: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
         .introProyectos {
-            @include medidas(90%, auto);
-            margin-left: 5%;
-            justify-items: center;
+            @include medidas(85%, auto);
             padding: 5%;
             div {
                 h2 {
@@ -259,19 +262,22 @@
             }
         }
     }
-
-
+    
     /*Main de la Pagina Desarrollo*/
 
     /*Sección con intro de la Pagina*/
 
     #desarrollo {
         @include imagenFondo(auto, repeat, top);
+        padding-top: 50px;
         section {
-            .desarrollo {
-                height: fit-content;
-                h2 {
-                    text-align: center;
+            .flexDesarrollo {
+                .desarrollo {
+                    height: fit-content;
+                    padding: 5%;
+                    h2 {
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -279,7 +285,7 @@
         section {
             .lenguajes {
                 margin-left: 0;
-                margin-top: 7%;
+                margin-top: 20%;
                 div {
                     img {
                         width: 85%;

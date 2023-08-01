@@ -4,16 +4,17 @@ section {
     .divVideo {
         position: relative;
         #video {
-            @include medidas($full-width, 400px);
+            @include medidas(1050px, 400px);
             margin-left: 162px;
             object-fit: cover;
             @extend %divs;
         }
         .divTexto {
             position: absolute;
-            bottom: 8vh;
+            bottom: 13vh;
             left: 36vw;
             line-height: normal;
+            width: 360px;
             p {
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-size: 60px;
@@ -66,6 +67,9 @@ section {
             }
         };
         .retrato {
+            padding-right: 0;
+            padding-left: 24px;
+            margin-left: 10px;
             img {
                 @extend %divs;
                 width: $full-width;

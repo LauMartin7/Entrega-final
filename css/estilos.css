@@ -15,7 +15,7 @@ header .flexIndex div nav.navbar-light div ul.navbar-nav li a.nav-link, header .
 }
 
 /*Estilo comun en divs e imagenes*/
-section .lenguajes .lenguajesTexto, #desarrollo section .flexDesarrollo .desarrollo, section .miCarrera .retrato img, section .miCarrera .miCarreraTexto, section .sobreMiS .retrato img, section .sobreMiS .sobreMiTextoS, section .sobreMiI .retrato img, section .sobreMiI .sobreMiTextoI, section .divVideo #video, section .presentacion .textoPresentacion div:not(.carousel-inner), section .presentacion .familia img, section .presentacion img:not(.codigo1, .codigo2) {
+section .lenguajes .lenguajesTexto, #desarrollo section .flexDesarrollo .desarrollo, section .miCarrera #cerebro img, section .miCarrera .miCarreraTexto, section .sobreMiS .retratoSobreMi img, section .sobreMiS .sobreMiTextoS, section .sobreMiI .retrato img, section .sobreMiI .sobreMiTextoI, section .divVideo #video, section .presentacion .textoPresentacion div:not(.carousel-inner), section .presentacion .familia img, section .presentacion img:not(.codigo1, .codigo2) {
   border-radius: 10px;
   border-right: 5px solid rgb(25, 167, 206);
   border-bottom: 5px solid rgb(25, 167, 206);
@@ -174,6 +174,9 @@ section .presentacion .codigo1 {
   position: relative;
   top: -100px;
 }
+section .presentacion .familia {
+  padding-left: 20px;
+}
 section .presentacion .familia img {
   width: 100%;
 }
@@ -228,16 +231,17 @@ section .divVideo {
   position: relative;
 }
 section .divVideo #video {
-  width: 100%;
+  width: 1050px;
   height: 400px;
   margin-left: 162px;
   object-fit: cover;
 }
 section .divVideo .divTexto {
   position: absolute;
-  bottom: 8vh;
+  bottom: 13vh;
   left: 36vw;
   line-height: normal;
+  width: 360px;
 }
 section .divVideo .divTexto p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -288,6 +292,11 @@ section .sobreMiI .sobreMiTextoI .leerMas {
 section .sobreMiI .sobreMiTextoI .leerMas:hover {
   box-shadow: 5px 7px 15px 7px rgba(65, 64, 64, 0.2);
   padding: 10px 10px;
+}
+section .sobreMiI .retrato {
+  padding-right: 0;
+  padding-left: 24px;
+  margin-left: 10px;
 }
 section .sobreMiI .retrato img {
   width: 100%;
@@ -356,34 +365,32 @@ section .sobreMiS .sobreMiTextoS p {
   text-align: justify;
   margin-bottom: 30px;
 }
-section .sobreMiS .retrato img {
+section .sobreMiS .retratoSobreMi img {
   width: 391px;
   height: 583px;
-  margin-left: 50px;
+  margin-left: 93px;
 }
 
 /*Seccion Mi Carrera de SobreMi*/
 section .miCarrera {
-  margin-top: 100px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 90px;
   padding-bottom: 150px;
 }
 section .miCarrera .miCarreraTexto {
-  height: 570px;
+  height: 600px;
   padding: 50px;
   background-color: rgb(175, 211, 226);
-  margin-left: 14px;
 }
 section .miCarrera .miCarreraTexto p {
   margin-top: 20px;
   text-align: justify;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
-section .miCarrera .retrato img {
+section .miCarrera #cerebro img {
   width: 100%;
 }
 
@@ -394,6 +401,10 @@ section .miCarrera .retrato img {
   width: 100%;
   padding: 100px;
   background-image: url(../img/chicaCodigo.webp);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   background-size: contain;
   background-repeat: repeat;
   background-position: center;
@@ -411,7 +422,6 @@ section .miCarrera .retrato img {
   border-bottom: 5px solid rgb(25, 167, 206);
   border-radius: 40px;
   box-shadow: 0px 15px 20px gray;
-  margin-left: 180px;
 }
 .intro .introProyectos div h2 {
   margin-bottom: 40px;
@@ -509,6 +519,7 @@ section .miCarrera .retrato img {
 }
 #desarrollo section .flexDesarrollo .desarrollo p {
   margin-top: 20px;
+  margin-bottom: 0;
   text-align: justify;
 }
 
@@ -519,16 +530,17 @@ section .lenguajes {
   justify-content: center;
   align-items: center;
   margin-top: 80px;
-  width: 100%;
   margin-left: 0;
-  margin-right: 0;
+  width: 100%;
 }
-section .lenguajes div img {
+section .lenguajes .logos {
+  padding-left: 0;
+  padding-right: 0;
+}
+section .lenguajes .logos img {
   filter: drop-shadow(0px 15px 20px gray);
 }
 section .lenguajes .lenguajesTexto {
-  width: 460px;
-  height: fit-content;
   padding: 20px;
   background-color: rgb(175, 211, 226);
   text-align: center;
@@ -806,6 +818,7 @@ footer .grillaFooter .linkedin:hover {
     font-size: 16px;
   }
   section .sobreMiI .retrato {
+    margin-left: 0;
     padding-left: 0;
     padding-right: 0;
     width: 80%;
@@ -820,6 +833,7 @@ footer .grillaFooter .linkedin:hover {
     background-size: auto;
     background-repeat: repeat;
     background-position: top;
+    padding-top: 50px;
     /*Seccion Sobre Mi*/
     /*Seccion Mi Carrera*/
   }
@@ -842,15 +856,14 @@ footer .grillaFooter .linkedin:hover {
   .mainSobreMi section .sobreMiS .sobreMiTextoS p {
     margin-bottom: 0;
   }
-  .mainSobreMi section .sobreMiS .retrato {
+  .mainSobreMi section .sobreMiS .retratoSobreMi {
     padding-left: 0;
     padding-right: 0;
     width: 80%;
     margin-top: 20%;
   }
-  .mainSobreMi section .sobreMiS .retrato img {
+  .mainSobreMi section .sobreMiS .retratoSobreMi img {
     width: 100%;
-    height: 368px;
     margin-left: 0;
   }
   .mainSobreMi section .miCarrera {
@@ -872,25 +885,25 @@ footer .grillaFooter .linkedin:hover {
     margin-bottom: 0;
     padding-bottom: 5vh;
   }
-  .mainSobreMi section .miCarrera .retrato {
+  .mainSobreMi section .miCarrera #cerebro {
     padding-left: 0;
     padding-right: 0;
     width: 80%;
     margin-top: 20%;
   }
-  .mainSobreMi section .miCarrera .retrato img {
+  .mainSobreMi section .miCarrera #cerebro img {
     width: 100%;
   }
   /*Main de la Pagina proyectos*/
   /*Seccion Intro de proyectos*/
   .intro {
-    padding: 5%;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .intro .introProyectos {
-    width: 90%;
+    width: 85%;
     height: auto;
-    margin-left: 5%;
-    justify-items: center;
     padding: 5%;
   }
   .intro .introProyectos div h2 {
@@ -930,17 +943,19 @@ footer .grillaFooter .linkedin:hover {
     background-size: auto;
     background-repeat: repeat;
     background-position: top;
+    padding-top: 50px;
     /*Sección de Lenguajes*/
   }
-  #desarrollo section .desarrollo {
+  #desarrollo section .flexDesarrollo .desarrollo {
     height: fit-content;
+    padding: 5%;
   }
-  #desarrollo section .desarrollo h2 {
+  #desarrollo section .flexDesarrollo .desarrollo h2 {
     text-align: center;
   }
   #desarrollo section .lenguajes {
     margin-left: 0;
-    margin-top: 7%;
+    margin-top: 20%;
   }
   #desarrollo section .lenguajes div img {
     width: 85%;

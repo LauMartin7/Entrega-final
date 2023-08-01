@@ -17,6 +17,7 @@
                 background-color: map-get($fondos, celesteClaro);
                 p {
                     margin-top: 20px;
+                    margin-bottom: 0;
                     text-align: justify;
                 }
             }
@@ -29,16 +30,16 @@
         .lenguajes{
             @include flex(flex, row wrap, center, center);
             margin-top: 80px;
-            width: $full-width;
             margin-left: 0;
-            margin-right: 0;
-            div {
+            width: $full-width;
+            .logos {
+                padding-left: 0;
+                padding-right: 0;
                 img {
                     filter: drop-shadow($sombreadoGral);
                 }
             };
             .lenguajesTexto {
-                @include medidas (460px, fit-content);
                 padding: 20px;
                 background-color: map-get($fondos, celesteClaro);
                 @extend %divs;
