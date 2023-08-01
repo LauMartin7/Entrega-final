@@ -900,7 +900,7 @@ footer .grillaFooter .linkedin:hover {
   .intro .introProyectos div img {
     width: 100%;
   }
-  /*Seccion Intro de proyectos*/
+  /*Seccion de proyectos*/
   .seccionProyectos {
     width: 100%;
     height: 100%;
@@ -919,7 +919,7 @@ footer .grillaFooter .linkedin:hover {
     padding: 0;
   }
   .seccionProyectos .grillaProyectos .proyectos img {
-    width: 80%;
+    width: 100%;
   }
   .seccionProyectos .grillaProyectos .proyectos details summary {
     font-size: 16px;

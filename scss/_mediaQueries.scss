@@ -234,7 +234,7 @@
             }
         }
     }
-    /*Seccion Intro de proyectos*/
+    /*Seccion de proyectos*/
     .seccionProyectos {
         @include medidas($full-width, 100%);
         .grillaProyectos {
@@ -249,7 +249,7 @@
                 height: auto;
                 padding: 0;
                 img {
-                    width: 80%;
+                    width: $full-width;
                 }
                 details {
                     summary {
