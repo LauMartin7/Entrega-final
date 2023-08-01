@@ -35,6 +35,7 @@
             .logos {
                 padding-left: 0;
                 padding-right: 0;
+                margin-right: 2%;
                 img {
                     filter: drop-shadow($sombreadoGral);
                 }
@@ -44,6 +45,7 @@
                 background-color: map-get($fondos, celesteClaro);
                 @extend %divs;
                 text-align: center;
+                margin-right: 1%;
                 h3 {
                     font-family: $font;
                     font-size: 25px;

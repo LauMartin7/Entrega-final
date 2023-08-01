@@ -286,7 +286,8 @@
             .lenguajes {
                 margin-left: 0;
                 margin-top: 20%;
-                div {
+                .logos {
+                    margin-right: 0;
                     img {
                         width: 85%;
                         margin-left: 8%;
@@ -297,6 +298,7 @@
                     width: 88%;
                     height: fit-content;
                     margin-top: 7%;
+                    margin-right: 0;
                 }
             }
         }
