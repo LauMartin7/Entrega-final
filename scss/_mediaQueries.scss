@@ -8,21 +8,22 @@
         .flexIndex {
             @include flexAbreviado (flex, row, space-between, center);
             .divLogo {
-                width: 22%;
+                width: 20%;
                 padding: 0;
                 img {
                     width: 125%;
                 }
             };
             .divH1 {
-                width: 30%;
+                width: 49%;
                 padding: 0;
                 h1 {
                     font-size: 23px;
                     text-align: center;
                 }
             };
-            div {
+            .divNav {
+                width: 31%;
                 nav {
                     &.navbar-light {
                         .navbar-toggler {

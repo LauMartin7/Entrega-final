@@ -7,7 +7,7 @@
 /*Maps*/
 /*Extend*/
 /*Estilo de pestañas del nav del header*/
-header .flexIndex div nav.navbar-light div ul.navbar-nav li a.nav-link, header .flexIndex div nav.navbar-light div ul.navbar-nav, header .flexIndex div nav.navbar-light {
+header .flexIndex .divNav nav.navbar-light div ul.navbar-nav li a.nav-link, header .flexIndex .divNav nav.navbar-light div ul.navbar-nav, header .flexIndex .divNav nav.navbar-light {
   color: rgb(175, 211, 226);
   font-weight: bold;
   font-size: 20px;
@@ -72,33 +72,33 @@ header .flexIndex {
 header .flexIndex .divLogo {
   width: 10%;
 }
-header .flexIndex .divH1 {
-  width: 30%;
-}
-header .flexIndex .divH1 h1 {
+header .flexIndex h1 {
   font-family: sans-serif;
   text-shadow: 3px 7px 2px rgba(27, 29, 29, 0.243);
   font-size: 40px;
   color: rgb(175, 211, 226);
   letter-spacing: 2px;
 }
-header .flexIndex div nav.navbar {
+header .flexIndex .divNav {
+  width: 55%;
+}
+header .flexIndex .divNav nav.navbar {
   background-color: rgb(20, 108, 148);
   padding-bottom: 0;
   height: 100%;
   padding-top: 0;
 }
-header .flexIndex div nav.navbar-light div {
+header .flexIndex .divNav nav.navbar-light div {
   width: 100%;
   height: 100%;
 }
-header .flexIndex div nav.navbar-light div ul {
+header .flexIndex .divNav nav.navbar-light div ul {
   list-style-type: none;
   margin-bottom: 0;
   width: 100%;
   height: 100%;
 }
-header .flexIndex div nav.navbar-light div ul.navbar-nav li {
+header .flexIndex .divNav nav.navbar-light div ul.navbar-nav li {
   display: flex;
   flex-direction: row wrap;
   justify-content: center;
@@ -106,19 +106,19 @@ header .flexIndex div nav.navbar-light div ul.navbar-nav li {
   align-self: center;
   width: 150px;
 }
-header .flexIndex div nav.navbar-light div ul.navbar-nav li a.nav-link {
+header .flexIndex .divNav nav.navbar-light div ul.navbar-nav li a.nav-link {
   width: 100%;
   height: 100%;
   text-align: center;
   align-self: center;
 }
-header .flexIndex div nav.navbar-light div ul.navbar-nav li a:hover {
+header .flexIndex .divNav nav.navbar-light div ul.navbar-nav li a:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   color: rgb(175, 211, 226);
 }
-header .flexIndex div nav.navbar-light .navbar-toggler {
+header .flexIndex .divNav nav.navbar-light .navbar-toggler {
   background-color: rgb(246, 241, 241);
 }
 
@@ -711,25 +711,28 @@ footer .grillaFooter .linkedin:hover {
     align-items: center;
   }
   header .flexIndex .divLogo {
-    width: 22%;
+    width: 20%;
     padding: 0;
   }
   header .flexIndex .divLogo img {
     width: 125%;
   }
   header .flexIndex .divH1 {
-    width: 30%;
+    width: 49%;
     padding: 0;
   }
   header .flexIndex .divH1 h1 {
     font-size: 23px;
     text-align: center;
   }
-  header .flexIndex div nav.navbar-light .navbar-toggler {
+  header .flexIndex .divNav {
+    width: 31%;
+  }
+  header .flexIndex .divNav nav.navbar-light .navbar-toggler {
     margin-bottom: 5px;
     margin-left: 10vw;
   }
-  header .flexIndex div nav.navbar-light div ul.navbar-nav li a.nav-link {
+  header .flexIndex .divNav nav.navbar-light div ul.navbar-nav li a.nav-link {
     font-size: 16px;
   }
   /*Main general del sitio en mobile*/
