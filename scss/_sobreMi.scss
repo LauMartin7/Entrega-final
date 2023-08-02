@@ -61,10 +61,11 @@ section {
             }
         };
         .retratoSobreMi {
+            padding-left: 24px;
             img {
                 @extend %divs;
-                @include medidas(391px, 583px);
-                margin-left: 93px;
+                width: $full-width;
+                
             }
         }
     }

@@ -3,7 +3,7 @@
 header {
     background-color: map-get($fondos, turquesa);
     width: $full-width;
-    margin-bottom: 100px;
+    margin-bottom: 0;
     border-bottom: $bordeHeader;
     .flexIndex {
         @include flexAbreviado (flex, row, space-around, center);
@@ -67,12 +67,4 @@ header {
             
         };
     };
-
-    &.headerIndex {
-        margin-bottom: 0;
-    }
-
-    &.headerDesarrollo {
-        margin-bottom: 0;
-    }
 }

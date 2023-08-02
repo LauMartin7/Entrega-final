@@ -60,7 +60,7 @@ main h2 {
 header {
   background-color: rgb(20, 108, 148);
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 0;
   border-bottom: 7px double rgba(44, 42, 42, 0.243);
 }
 header .flexIndex {
@@ -120,12 +120,6 @@ header .flexIndex div nav.navbar-light div ul.navbar-nav li a:hover {
 }
 header .flexIndex div nav.navbar-light .navbar-toggler {
   background-color: rgb(246, 241, 241);
-}
-header.headerIndex {
-  margin-bottom: 0;
-}
-header.headerDesarrollo {
-  margin-bottom: 0;
 }
 
 /*Index*/
@@ -365,10 +359,11 @@ section .sobreMiS .sobreMiTextoS p {
   text-align: justify;
   margin-bottom: 30px;
 }
+section .sobreMiS .retratoSobreMi {
+  padding-left: 24px;
+}
 section .sobreMiS .retratoSobreMi img {
-  width: 391px;
-  height: 583px;
-  margin-left: 93px;
+  width: 100%;
 }
 
 /*Seccion Mi Carrera de SobreMi*/
@@ -709,10 +704,6 @@ footer .grillaFooter .linkedin:hover {
 /*VISTA MOBILE*/
 @media only screen and (min-width: 320px) and (max-width: 576px) {
   /*Header*/
-  header {
-    padding-top: 5vh;
-    margin-bottom: 20%;
-  }
   header .flexIndex {
     display: flex;
     flex-direction: row;
@@ -863,6 +854,7 @@ footer .grillaFooter .linkedin:hover {
     padding-right: 0;
     width: 80%;
     margin-top: 20%;
+    margin-left: 0;
   }
   .mainSobreMi section .sobreMiS .retratoSobreMi img {
     width: 100%;
@@ -922,7 +914,7 @@ footer .grillaFooter .linkedin:hover {
   }
   .seccionProyectos .grillaProyectos {
     grid-template-columns: 1fr;
-    row-gap: 30vh;
+    row-gap: 15vh;
     width: 100%;
     margin-top: 20vh;
     margin-bottom: 30vh;
