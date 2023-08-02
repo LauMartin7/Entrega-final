@@ -69,6 +69,9 @@ header .flexIndex {
   justify-content: space-around;
   align-items: center;
 }
+header .flexIndex .divLogo {
+  width: 10%;
+}
 header .flexIndex .divH1 {
   width: 30%;
 }
@@ -78,9 +81,6 @@ header .flexIndex .divH1 h1 {
   font-size: 40px;
   color: rgb(175, 211, 226);
   letter-spacing: 2px;
-}
-header .flexIndex .divLogo {
-  width: 10%;
 }
 header .flexIndex div nav.navbar {
   background-color: rgb(20, 108, 148);
@@ -203,8 +203,8 @@ section .presentacion .textoPresentacion div:not(.carousel-inner).trabajemos {
   width: 450px;
   height: 250px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-flow: column;
+  justify-content: center;
   align-items: center;
 }
 section .presentacion .textoPresentacion div:not(.carousel-inner).trabajemos img {
@@ -232,8 +232,8 @@ section .divVideo #video {
 }
 section .divVideo .divTexto {
   position: absolute;
-  bottom: 13vh;
-  left: 36vw;
+  bottom: 8vh;
+  left: 35vw;
   line-height: normal;
   width: 360px;
 }
@@ -732,6 +732,7 @@ footer .grillaFooter .linkedin:hover {
   header .flexIndex div nav.navbar-light div ul.navbar-nav li a.nav-link {
     font-size: 16px;
   }
+  /*Main general del sitio en mobile*/
   main h2 {
     font-size: 20px;
   }
@@ -916,8 +917,8 @@ footer .grillaFooter .linkedin:hover {
     grid-template-columns: 1fr;
     row-gap: 15vh;
     width: 100%;
-    margin-top: 20vh;
-    margin-bottom: 30vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
   .seccionProyectos .grillaProyectos .proyectos {
     width: 80%;

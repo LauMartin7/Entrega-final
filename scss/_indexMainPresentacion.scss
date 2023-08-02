@@ -74,7 +74,7 @@ section {
                 };
                 &.trabajemos {
                     @include medidas(450px, 250px);
-                    @include flex(flex, row wrap, space-around, center);
+                    @include flex(flex, column, center, center);
                     img {
                         width: 70px;
                     };

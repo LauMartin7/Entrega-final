@@ -47,7 +47,7 @@
             }
         }
     }
-
+    /*Main general del sitio en mobile*/
     main {
         h2 {
             font-size: 20px;
@@ -244,8 +244,8 @@
             grid-template-columns: 1fr;
             row-gap: 15vh;
             width: $full-width;
-            margin-top: 20vh;
-            margin-bottom: 30vh;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
             .proyectos {
                 width: 80%;
                 justify-self: center;
@@ -305,9 +305,7 @@
     }
     
 
-
     /*Main de la Pagina Contacto*/
-
 
     @keyframes appear-rigth {
         from {

@@ -7,7 +7,10 @@ header {
     border-bottom: $bordeHeader;
     .flexIndex {
         @include flexAbreviado (flex, row, space-around, center);
-        .divH1{
+        .divLogo {
+            width: 10%;
+        };
+        .divH1 {
             width: 30%;
             h1 {
                 font-family: $font;
@@ -16,9 +19,6 @@ header {
                 color: map-get($colorFuente, celesteClaro);
                 letter-spacing: 2px;
             };
-        };
-        .divLogo {
-            width: 10%;
         };
         div {
             nav{
