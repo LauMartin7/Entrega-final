@@ -1,31 +1,33 @@
 /*INDEX*/
 /*Sección video de Inicio*/
-section {
+.seccionVideo {
+    padding-left: 3%;
     .divVideo {
         position: relative;
         #video {
-            @include medidas(1050px, 400px);
-            margin-left: 162px;
+            @include medidas(100%, 400px);
+            margin-left: 12%;
             object-fit: cover;
             @extend %divs;
         }
         .divTexto {
             position: absolute;
-            bottom: 8vh;
-            left: 35vw;
+            bottom: 17vh;
+            left: 37vw;
             line-height: normal;
-            width: 360px;
+            width: 33%;
             p {
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                font-size: 60px;
+                font-size: 40px;
                 letter-spacing: 5px;
+                text-align: center;
                 font-weight: bold;
                 color: map-get($colorFuente , celesteClaro);
             }
             #coding {
                 font-style: italic;
                 color: map-get($colorFuente , celesteOscuro);
-                font-size: 80px;
+                font-size: 60px;
                 text-align: center;
             }
         }
@@ -35,12 +37,12 @@ section {
 /*Sección Sobre mi de Inicio*/
 section {
     .sobreMiI {
-        margin-left: 50px;
+        margin-left: 4%;
         margin-top: 100px;
         margin-bottom: 150px;
-        @include flex(flex, row wrap, space-evenly, center);
+        @include flex(flex, row wrap, space-evenly, flex-start);
         .sobreMiTextoI {
-            height: 480px;
+            height: fit-content;
             @extend %divs;
             padding: 50px;
             background-color: map-get($fondos, celesteClaro);
@@ -68,7 +70,7 @@ section {
         };
         .retrato {
             padding-right: 0;
-            padding-left: 24px;
+            padding-left: 2%;
             margin-left: 10px;
             img {
                 @extend %divs;

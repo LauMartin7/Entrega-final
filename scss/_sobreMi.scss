@@ -36,11 +36,12 @@ section {
             animation-name: slide-in-top;
             animation-duration: 5s;
             animation-iteration-count: 1;
-            @include medidas(214px, 720px);
+            @include medidas(14%, 720px);
             position: relative;
             top: -100px;
         };
         .codigo1 {
+            width: 8.3%;
             z-index: -1;
             animation-name: slide-in;
             animation-duration: 1.5s;
@@ -49,23 +50,23 @@ section {
             top: -100px;
         };
         .sobreMiTextoS {
-            height: 540px;
+            height: fit-content;
             @extend %divs;
             padding: 50px;
+            padding-bottom: 20px;
             background-color: map-get($fondos, celesteClaro);
-                margin-left: 14px;
             p {
                 margin-top: 20px;
                 text-align: justify;
-                margin-bottom: 30px;
+                margin-bottom: 10px;
             }
         };
         .retratoSobreMi {
-            padding-left: 24px;
+            margin-left: 2%;
+            padding-right: 0;
             img {
                 @extend %divs;
                 width: $full-width;
-                
             }
         }
     }
@@ -73,21 +74,22 @@ section {
 /*Seccion Mi Carrera de SobreMi*/
 section {
     .miCarrera {
-        @include flex(flex, row wrap, space-evenly, flex-start);
-        margin-left: 90px;
+        @include flex(flex, row wrap, space-between, flex-start);
+        margin-left: 11%;
         padding-bottom: 150px;
         .miCarreraTexto {
-            height: 600px;
+            height: fit-content;
             padding: 50px;
+            padding-bottom: 20px;
             @extend %divs;
             background-color: map-get($fondos, celesteClaro);
             p {
                 margin-top: 20px;
                 text-align: justify;
-                margin-bottom: 50px;
             }
         };
         #cerebro {
+            padding-left: 5%;
             img {
                 @extend %divs;
                 width: $full-width;

@@ -4,21 +4,25 @@
 .grillaProyectos {
     display: grid;
     width: $full-width;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 150px;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    row-gap: 180px;
     justify-items: center;
     margin: 100px 0 150px;
     .proyectos {
         background-color: map-get($fondos, casiBlanco);
-        @include medidas(370px, 300px);
+        @include medidas(370px, 260px);
         padding: 10px;
         text-align: center;
+        img {
+            @include medidas($full-width, 191px);
+        };
         details {
             summary {
+                height: 68px;
                 background-color: map-get($fondos, turquesa);
                 border-right: 4px double rgb(25, 167, 206);
                 border-bottom: 4px double rgb(25, 167, 206);
-                padding: 5px;
+                padding: 6% 2%;
                 cursor: pointer;
                 font-family: $font;
                 font-size: 18px;
