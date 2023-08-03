@@ -75,8 +75,9 @@ section {
 section {
     .miCarrera {
         @include flex(flex, row wrap, space-between, flex-start);
-        margin-left: 11%;
+        margin-left: 8vw;
         padding-bottom: 150px;
+        margin-right: 1.5vw;
         .miCarreraTexto {
             height: fit-content;
             padding: 50px;
@@ -89,7 +90,6 @@ section {
             }
         };
         #cerebro {
-            padding-left: 5%;
             img {
                 @extend %divs;
                 width: $full-width;

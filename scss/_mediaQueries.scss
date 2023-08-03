@@ -142,7 +142,6 @@
         padding-top: 0;
     }
     
-    
     /*Main de la Pagina Sobre Mi*/
 
     .mainSobreMi {
@@ -190,7 +189,8 @@
                 align-items: center;
                 padding-bottom: 20%;
                 padding-top: 20%;
-                padding-left: 3%;
+                padding-left: 2%;
+                padding-right: 0;
                 .miCarreraTexto {
                     @include medidas(84%, fit-content);
                     padding: 5%;
@@ -379,3 +379,58 @@
         }
     }
 }
+
+/*seccion mi carrera de sobre mi que necesito un ajuste a mobile angostos*/
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    .mainSobreMi {
+        section {
+            .miCarrera {
+                padding-left: 4%;
+                .miCarreraTexto {
+                    @include medidas(87%, fit-content);
+                };
+                #cerebro {
+                    width: 87%;
+                }
+            }
+        };
+    }
+}
+/*DESKTOP*/
+/*INDEX, seccion video y sobre mi que necesito un ajuste a desktop angostos*/
+@media only screen and (min-width: 1024px) and (max-width: 1080px) {
+    .seccionVideo {
+        padding-left: 5.2%;
+        .divVideo {
+            #video {
+                @include medidas(97%, 400px);
+            }
+            .divTexto {
+                bottom: 22vh;
+            }
+        }
+    }
+
+    section {
+        .sobreMiI {
+            margin-left: 6%;
+            .retrato {
+                padding-right: 3%;
+            }
+        }
+    }
+}
+
+/*seccion mi carrera de sobre mi que necesito un ajuste a desktop angostos*/
+@media only screen and (min-width: 1024px) and (max-width: 1080px) {
+    .mainSobreMi {
+        section {
+            .miCarrera {
+                margin-left: 10vw;
+                margin-right: 3vw;
+                
+            }
+        };
+    }
+}
+

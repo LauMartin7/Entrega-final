@@ -238,8 +238,8 @@ section .presentacion .textoPresentacion div:not(.carousel-inner).hola {
 }
 .seccionVideo .divVideo .divTexto {
   position: absolute;
-  bottom: 17vh;
-  left: 37vw;
+  bottom: 19vh;
+  left: 33vw;
   line-height: normal;
   width: 33%;
 }
@@ -381,8 +381,9 @@ section .miCarrera {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin-left: 11%;
+  margin-left: 8vw;
   padding-bottom: 150px;
+  margin-right: 1.5vw;
 }
 section .miCarrera .miCarreraTexto {
   height: fit-content;
@@ -393,9 +394,6 @@ section .miCarrera .miCarreraTexto {
 section .miCarrera .miCarreraTexto p {
   margin-top: 20px;
   text-align: justify;
-}
-section .miCarrera #cerebro {
-  padding-left: 5%;
 }
 section .miCarrera #cerebro img {
   width: 100%;
@@ -891,7 +889,8 @@ footer .grillaFooter .linkedin:hover {
     align-items: center;
     padding-bottom: 20%;
     padding-top: 20%;
-    padding-left: 3%;
+    padding-left: 2%;
+    padding-right: 0;
   }
   .mainSobreMi section .miCarrera .miCarreraTexto {
     width: 84%;
@@ -1053,6 +1052,46 @@ footer .grillaFooter .linkedin:hover {
     font-size: 11px;
     margin-top: 10px;
     width: 70%;
+  }
+}
+/*seccion mi carrera de sobre mi que necesito un ajuste a mobile angostos*/
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  .mainSobreMi section .miCarrera {
+    padding-left: 4%;
+  }
+  .mainSobreMi section .miCarrera .miCarreraTexto {
+    width: 87%;
+    height: fit-content;
+  }
+  .mainSobreMi section .miCarrera #cerebro {
+    width: 87%;
+  }
+}
+/*DESKTOP*/
+/*INDEX, seccion video y sobre mi que necesito un ajuste a desktop angostos*/
+@media only screen and (min-width: 1024px) and (max-width: 1080px) {
+  .seccionVideo {
+    padding-left: 5.2%;
+  }
+  .seccionVideo .divVideo #video {
+    width: 97%;
+    height: 400px;
+  }
+  .seccionVideo .divVideo .divTexto {
+    bottom: 22vh;
+  }
+  section .sobreMiI {
+    margin-left: 6%;
+  }
+  section .sobreMiI .retrato {
+    padding-right: 3%;
+  }
+}
+/*seccion mi carrera de sobre mi que necesito un ajuste a desktop angostos*/
+@media only screen and (min-width: 1024px) and (max-width: 1080px) {
+  .mainSobreMi section .miCarrera {
+    margin-left: 10vw;
+    margin-right: 3vw;
   }
 }
 
