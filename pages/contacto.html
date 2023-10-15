@@ -73,22 +73,25 @@
         <form>
             <div>
                 <label for="name">Nombre:</label>
-                <input type="text" name="name" placeholder="Ingrese su nombre">
+                <input type="text" id="nombre" name="name" placeholder="Ingrese su nombre" required>
             </div>
             <div>
                 <label for="mail">E-Mail:</label>
-                <input type="email" name="mail" placeholder="Ingrese su e-mail" required>
+                <input type="email" id="mail" name="mail" placeholder="Ingrese su e-mail" required>
             </div>
             <div>
                 <label for="asunto">Asunto:</label>
-                <input type="text" name="asunto" placeholder="Ingrese el asunto">
+                <input type="text" id="asunto" name="asunto" placeholder="Ingrese el asunto">
             </div>
             <div>
                 <label for="mensaje">Mensaje:</label>
                 <textarea name="mensaje" id="mje" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
             </div>
             <div class="boton">
-                <button type="submit">Enviar</button>
+                <a href="https://api.whatsapp.com/send?phone=5493513031834" target="_blank">
+                    <img id="whatsapp" src="./img/whatsapp.png">
+                </a>
+                <button type="submit" id="botonEnviar">Enviar</button>
             </div>
             <div class="boton">
                 <button type="reset">Limpiar formulario</button>
@@ -113,5 +116,6 @@
             </div>
         </div>
     </footer>
+    <script src="../formulario.js"></script>
 </body>
 </html>
