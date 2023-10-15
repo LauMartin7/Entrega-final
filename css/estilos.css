@@ -420,7 +420,7 @@ section .miCarrera #cerebro img {
   justify-content: center;
   align-items: center;
   width: 850px;
-  height: 300px;
+  height: 350px;
   padding: 30px;
   background-color: rgb(175, 211, 226);
   border-right: 5px solid rgb(25, 167, 206);
@@ -437,6 +437,10 @@ section .miCarrera #cerebro img {
 
 /*PROYECTOS*/
 /*Sección Proyectos de Proyectos*/
+#mainProyectos{
+  margin-bottom: 240px;
+}
+
 .grillaProyectos {
   display: grid;
   width: 100%;
