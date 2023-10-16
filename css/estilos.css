@@ -516,7 +516,7 @@ section .miCarrera #cerebro img {
   padding-bottom: 100px;
   padding-top: 100px;
   background-image: url(../img/codigo.webp);
-  background-size: contain;
+  background-size: cover;
   background-repeat: repeat;
   background-position: center;
   /*--Seccion con explicación del sitio/intro de la página*/
@@ -606,68 +606,13 @@ section .lenguajes .lenguajesTexto h3 {
   font-weight: 800;
   text-align: center;
 }
-#contacto form {
+.sectionForm {
+  display: flex;
+  justify-content: center;
+}
+#gForm {
   background: linear-gradient(to right, rgb(175, 211, 226), rgb(25, 167, 206));
-  width: 40%;
-  height: 950px;
-  padding: 12px 20px;
-  border-radius: 10px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  font-weight: bold;
-  border-right: 7px solid rgba(20, 108, 148, 0.8);
-  border-bottom: 7px solid rgba(20, 108, 148, 0.8);
-}
-#contacto form div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: baseline;
-  color: rgb(20, 108, 148);
-  font-size: 18px;
-}
-#contacto form div input[type=text],
-#contacto form div input[type=email] {
-  width: 90%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 1px solid rgb(25, 167, 206);
-  border-radius: 10px;
-  margin: 15px 0 15px 20px;
-}
-#contacto form div textarea {
-  width: 90%;
-  padding: 40px 20px;
-  margin: 15px 0 15px 20px;
-  border: 1px solid rgb(25, 167, 206);
-  border-radius: 10px;
-}
-#contacto form div ::placeholder {
-  font-family: sans-serif;
-  color: rgb(25, 167, 206);
-  font-size: 16px;
-}
-#contacto form .boton {
-  align-items: center;
-}
-#contacto form .boton button {
-  width: 50%;
-  background: linear-gradient(to top, rgb(175, 211, 226), rgb(246, 241, 241));
-  padding: 6px 8px;
-  margin-top: 20px;
-  border: 2px solid rgb(20, 108, 148);
   border-radius: 7px;
-  font-family: sans-serif;
-  font-size: 20px;
-  color: rgb(20, 108, 148);
-}
-#contacto form .boton button:hover {
-  box-shadow: 5px 7px 15px 7px rgba(65, 64, 64, 0.2);
 }
 
 /*Footer*/
